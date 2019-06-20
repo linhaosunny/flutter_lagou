@@ -18,5 +18,7 @@
 ****
 - 消息  
 全部沟通- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgcontact_ios_001.png" width="212" height="417" alt="图片0-1" /> 全部沟通 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgcontact_android_001.png" width="240" height="417" alt="图片0-1" />  
-谁看过我- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgsee_ios_001.png" width="212" height="417" alt="图片0-1" /> 谁看过我 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgsee_android_001.png" width="240" height="417" alt="图片0-1" />
+谁看过我- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgsee_ios_001.png" width="212" height="417" alt="图片0-1" /> 谁看过我 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgsee_android_001.png" width="240" height="417" alt="图片0-1" />  
+聊天- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_ios_001.png" width="212" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_ios_002.png" width="212" height="417" alt="图片0-1" />   
+聊天 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_android_001.png" width="240" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_android_002.png" width="240" height="417" alt="图片0-1" />
 ****
