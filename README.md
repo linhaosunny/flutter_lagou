@@ -15,3 +15,8 @@
   选择地址 - IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_libaddress_ios_001.png" width="212" height="417" alt="图片0-1" /> 选择地址- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_libaddress_android_001.png" width="240" height="417" alt="图片0-1" />  
    筛选 - IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_libselect_ios_001.png" width="212" height="417" alt="图片0-1" /> 筛选- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_libselect_android_001.png" width="240" height="417" alt="图片0-1" />  
    排序 - IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_libsort_ios_001.png" width="212" height="417" alt="图片0-1" /> 排序- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_libsort_android_001.png" width="240" height="417" alt="图片0-1" /> 
+****
+- 消息  
+全部沟通- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgcontact_ios_001.png" width="212" height="417" alt="图片0-1" /> 全部沟通 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgcontact_android_001.png" width="240" height="417" alt="图片0-1" />  
+谁看过我- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgsee_ios_001.png" width="212" height="417" alt="图片0-1" /> 谁看过我 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgsee_android_001.png" width="240" height="417" alt="图片0-1" />
+****
