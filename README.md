@@ -5,3 +5,6 @@
   - 启动新特性页面 
    <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature001.png" width="212" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature002.png" width="212" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature003.png" width="212" height="417" alt="图片0-1" />
   ****
+ - 首页
+
+- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_home001.png" width="212" height="417" alt="图片0-1" /> - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_home002.png" width="212" height="417" alt="图片0-1" />
