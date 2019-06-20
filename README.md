@@ -6,9 +6,9 @@
   新特性- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature_ios_001.png" width="212" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature_ios_002.png" width="212" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature_ios_003.png" width="212" height="417" alt="图片0-1" />  
   新特性- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature_android_001.png" width="240" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature_android_002.png" width="240" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/newfeature_android_003.png" width="240" height="417" alt="图片0-1" />
   ****
- - 首页 
-  首页- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_home_ios_001.png" width="212" height="417" alt="图片0-1" /> 首页 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_home_android_001.png" width="240" height="417" alt="图片0-1" />
+ - 首页  
+ 首页- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_home_ios_001.png" width="212" height="417" alt="图片0-1" /> 首页 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_home_android_001.png" width="240" height="417" alt="图片0-1" />
   ****
- - 公司
-  榜单- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_companydan_ios_001.png" width="212" height="417" alt="图片0-1" /> 榜单- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_companydan_android_001.png" width="240" height="417" alt="图片0-1" />  
+ - 公司  
+ 榜单- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_companydan_ios_001.png" width="212" height="417" alt="图片0-1" /> 榜单- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_companydan_android_001.png" width="240" height="417" alt="图片0-1" />  
   公司库- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_companylib_ios_001.png" width="212" height="417" alt="图片0-1" /> 公司库- Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_companylib_android_001.png" width="240" height="417" alt="图片0-1" />
