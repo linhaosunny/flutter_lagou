@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 class SearchBar extends StatefulWidget {
   final String leftIcon;
   Color  backgroudColor;
+  double height;
 
-  SearchBar(this.leftIcon,{Key key,this.backgroudColor}): super(key: key);
+  SearchBar(this.leftIcon,{Key key,this.backgroudColor,this.height}): super(key: key);
   @override
   _SearchBarState createState() => _SearchBarState();
 }
@@ -14,22 +15,22 @@ class _SearchBarState extends State<SearchBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 36,
+      height: widget.height,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(widget.height * 0.5),
         color: widget.backgroudColor,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           new Image.asset(widget.leftIcon,
-          width: 20,
-          height: 20,
-          color: Colors.black54),
+          width: 14,
+          height: 14,
+          color: Colors.black45),
           new Container(
-            padding: new EdgeInsets.only(left: 15.0),
+            padding: new EdgeInsets.only(left: 5.0),
             child: new Text('移动开发',
-              style: new TextStyle(fontSize: 14.0,color: Colors.black54),
+              style: new TextStyle(fontSize: 12.0,color: Colors.black45),
             ),
           )
         ],

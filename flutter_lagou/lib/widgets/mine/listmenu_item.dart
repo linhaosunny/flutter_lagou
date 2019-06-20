@@ -69,7 +69,7 @@ class _ListMenuItemState extends State<ListMenuItem> {
                     style:new TextStyle(color: Colors.black54,fontSize: 12.0)
                   ),
                 ),
-                new Icon(Icons.chevron_right,color: Colors.grey)
+                new Icon(Icons.chevron_right,color: Colors.grey,size: 16.0,)
               ],
             ),
           ),

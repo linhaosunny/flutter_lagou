@@ -18,7 +18,7 @@ class _GuidePageState extends State<GuidePage> implements OnSkipClickLister {
   }
 
   void _goHomePage() {
-    Navigator.of(context).pushNamedAndRemoveUntil(PageRoutes.HOME_PAGE, (Route<dynamic> route) => false);
+    Navigator.of(context).pushNamedAndRemoveUntil(PageRoutes.NEWFEATURE_PAGE, (Route<dynamic> route) => false);
   }
 
   @override
@@ -59,10 +59,11 @@ class _GuidePageState extends State<GuidePage> implements OnSkipClickLister {
               child: new SkipdownTime(
                 Color.fromARGB(255, 15, 185, 125),
                 22.0,
-                new Duration(seconds: 5),
+                new Duration(seconds: 3),
                 new Size(25.0, 25.0),
                 skipText: '跳过',
                 clickLister: this,
+                isHidden: true,
               ),
             ),
           ),

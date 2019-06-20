@@ -1,41 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter_lagou/widgets/model/banner_model.dart';
 import 'package:flutter_lagou/widgets/utility/screen.dart';
+import 'package:flutter_lagou/widgets/home/home_public.dart';
 
 class HomeBanner extends StatelessWidget {
   final List<BannerModel> bannerModels;
-
-  HomeBanner(this.bannerModels);
+  final double height;
+  final String placeholder;
+  HomeBanner({Key key,this.bannerModels,this.height,this.placeholder}) :super(key:key);
 
   @override
   Widget build(BuildContext context) {
 
-    if (bannerModels.length == 0) {
+    if (bannerModels == null || bannerModels.length == 0) {
       return SizedBox();
     }
 
     return Container(
-      color: Colors.white,
-      child: CarouselSlider(
-        items: bannerModels.map((model) {
-          return Builder(
-            builder: (BuildContext context) {
-              return Container(
-                width: Screen.width,
-                margin: new EdgeInsets.symmetric(horizontal: 5.0),
-                child: Image.network(
-                  model.imageUrl ?? '',
-                  fit: BoxFit.fill,
-                ),
-              );
-            },
+      alignment: Alignment.center,
+      height: height,
+      child: new BannerWidget(
+        height: height,
+        autoPlay: true,
+        content: bannerModels.map((model){
+          return Container(
+            width: Screen.width,
+            margin: new EdgeInsets.symmetric(horizontal: 0.0),
+            child: FadeInImage.assetNetwork(
+              placeholder: placeholder,
+              image: model.imageUrl ?? '',
+              fit: BoxFit.cover,
+            )
           );
         }).toList(),
-        aspectRatio: 2,
-        interval: const Duration(seconds: 5),
-        autoPlay: true,
-      ),
+      )
     );
   }
 }

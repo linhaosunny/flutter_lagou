@@ -1,0 +1,44 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id": "02366547",
+        "module_name" : "chatStateMsg",
+        "content" : "正在沟通的职位：IOS开发工程师"
+      },
+      {
+        "id": "02366547",
+        "module_name" : "postJobInfo",
+        "content" :{
+          "positionId": 5679514,
+          "positionName": "IOS开发工程师",
+          "salary": "12k-18k",
+          "city": "广州",
+          "workYear": "3-5年",
+          "education": "大专",
+          "companyName": "李经理@链行天下（广州）区块链研究有限公司"
+        }
+      },
+      {
+        "id": "01366578",
+        "module_name" : "chatMsgList",
+        "content" :[
+          {
+            "type" : 1,
+            "headImg": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B1/B9/CgoB5lv_W1OACXXzAAAWbX89NVo181.png",
+            "content": "你好，考虑新的工作机会吗？有兴趣聊聊吗？",
+            "date": "02月28日 14:05"
+          },
+          {
+            "type" : 2,
+            "headImg": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B1/B9/CgoB5lv_W1OACXXzAAAWbX89NVo181.png",
+            "content": "我觉得你很适合我的IOS开发工程师，可以发我一份简历吗?",
+            "date": "02月28日 14:05"
+          }
+        ]
+      }
+    ]
+  }
+}

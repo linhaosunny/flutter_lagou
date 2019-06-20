@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'dart:io';
+import 'package:flutter/services.dart';
 import 'package:flutter_lagou/widgets/home/search_bar.dart';
-import 'package:flutter_lagou/widgets/utility/screen.dart';
-import 'package:flutter_lagou/widgets/home/home_banner.dart';
 import 'package:flutter_lagou/widgets/home/home_public.dart';
 import 'package:flutter_lagou/public.dart';
 
 
 class HomePage extends StatefulWidget {
+  final double _homeTopBannerHeight = 220;
+  final double _homeTopicHeight = 540;
   @override
   State<StatefulWidget> createState() {
   
@@ -17,33 +19,59 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   ScrollController scrollController = ScrollController();
-  List<BannerModel> bannerInfos = [];
+  
+  List<BannerModel> topBannerDatas = [];
+  List<NewsBannerModel> newsBannerDatas = [];
+  List<TopicTabModel> topicTabMenus = [];
+  List<TopicBottomModel> topicBottomDatas = [];
   List<HomeModel> modules = [];
-  List<Choice> tabs = [];
-  TabController mTabController;
-  int mCurrentPosition = 0;
+
   double _navAplpha = 0.0;
+  double _offset = 0.0;
+  bool _mainScrollable = true;
+  bool _contentScrollable = true;
+  bool _autoScroll = false;
+  bool _isTabbarItemClick = false;
+  bool _isNavgationBarHidden = false;
 
   void _rightTabItemPressed() {
 
+  }
+
+  void _leftTabItemPressed() {
+
+    if (_isTabbarItemClick) {
+      _isTabbarItemClick = false;
+    }
+    
+    scrollController.animateTo(0.0,duration: new Duration(milliseconds: 300),curve: Curves.linear);
+    setState(() {
+      this._mainScrollable = true;
+      this._contentScrollable = false;
+      this._offset = (widget._homeTopicHeight - Screen.navigationBarHeight)*0.5;
+    });
+    this._autoScroll =true;
+  }
+
+  void _statuTabbarItemPressed(int) {
+    _isTabbarItemClick = true;
+
+    scrollController.animateTo((widget._homeTopicHeight - Screen.navigationBarHeight)*0.5,duration: new Duration(milliseconds: 300),curve: Curves.linear);
+    setState(() {
+      this._mainScrollable = false;
+      this._contentScrollable =true;
+      this._offset = (widget._homeTopicHeight - Screen.navigationBarHeight)*0.5;
+    });
+    this._autoScroll = true;
   }
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    tabs.add(Choice(title: '热门', icon: Icons.hot_tub, position: 0));
-    tabs.add(Choice(title: '最新', icon: Icons.fiber_new, position: 1));
-    mTabController = new TabController(vsync: this,length: tabs.length);
-    //判断TabBar是否切换
-    mTabController.addListener(() {
-      if (mTabController.indexIsChanging) {
-        setState(() {
-          mCurrentPosition = mTabController.index;
-        });
-      }
-    });
     
+    _mainScrollable =true;
+    _contentScrollable =false;
     // 滚动视图添加监听
     scrollController.addListener(() {
       var offset = scrollController.offset;
@@ -53,23 +81,43 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             _navAplpha = 0;
           });
         } 
-      } else if (offset < Screen.navigationBarHeight) {
+
         setState(() {
-          _navAplpha = 1 - (Screen.navigationBarHeight - offset) / Screen.navigationBarHeight;
+          _isNavgationBarHidden = true;
+        });
+      } else if (offset < widget._homeTopBannerHeight) {
+        setState(() {
+          _isNavgationBarHidden = false;
+          _navAplpha = 1 - (widget._homeTopBannerHeight - offset) / widget._homeTopBannerHeight;
         });
       } else if (_navAplpha != 1) {
         setState(() {
+          _isNavgationBarHidden = false;
           _navAplpha = 1;
         });
       }
+     
+      if (offset > (widget._homeTopicHeight - Screen.navigationBarHeight)*0.5) {
+          setState(() {
+            this._mainScrollable = false;
+            this._contentScrollable =true;
+            this._offset = (widget._homeTopicHeight - Screen.navigationBarHeight)*0.5;
+          });
+          scrollController.animateTo((widget._homeTopicHeight - Screen.navigationBarHeight)*0.5,duration: new Duration(milliseconds: 300),curve: Curves.linear);
+        } else {
 
-      if (_navAplpha != 1) {
-        print("透明");
-      } else {
-        print("不透明");
-      }
-
-      print(Screen.navigationBarHeight);
+          if (this._autoScroll) {
+            this._autoScroll = false;
+          } else {
+            if (!_isTabbarItemClick) {
+              setState(() {
+                this._offset = offset;
+              });
+            }    
+          }
+          
+        }
+      
     });
 
     fetchData();
@@ -77,7 +125,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   Future<void> fetchData() async {
     try {
-      var action = 'home_promo';
+      var action = 'home_topicdata';
       var responseJson = await Request.post(action: action);
       List moduleData = responseJson['module'];
       List <HomeModel> modules = [];
@@ -87,145 +135,138 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
       setState(() {
         this.modules = modules;
-        this.bannerInfos = modules[0].bannerModels;
-        print(bannerInfos);
+        this.topBannerDatas = modules[0].bannerModels;
+        this.newsBannerDatas = modules[1].newsModels;
+        this.topicTabMenus = modules[2].topicTabMenus;
+        this.topicBottomDatas =modules[3].topicBottomModels;
       });
 
     } catch (e) {
       print('读取错误：' + e.toString());
     }
-    print(Screen.navigationBarHeight);
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
     super.dispose();
-    mTabController.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
+  
+  Widget _buildHeadPlanContent() {
+    return HomeHeadPlan(bannerDatas: topBannerDatas,newsDatas: newsBannerDatas,topicTabMenus: topicTabMenus,topicBottomDatas: topicBottomDatas, height: widget._homeTopicHeight,bannerHeight: widget._homeTopBannerHeight);
+  }
 
-    return new Scaffold(
-      body: new Stack(
-        children: <Widget>[
-          new NestedScrollView(
-            controller: scrollController,
-            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-              return <Widget>[SliverOverlapAbsorber(
-                handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
-                child: SliverAppBar(
-                  primary: false,
-                  pinned: true,
-                  expandedHeight: 340,
-                  backgroundColor: Colors.white,
-                  flexibleSpace: new FlexibleSpaceBar(
-                    centerTitle: true,
-                    title: new Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        // new HomeBanner(bannerInfos)
-                        new Container(
-                          width: Screen.width,
-                          height: 240,
-                          color: Colors.red,
-                        ),
-                        new Container(
-                          width: Screen.width,
-                          height: 100,
-                          color: Colors.green,
-                        )
-                      ],
-                    ),
-                    collapseMode: CollapseMode.none,
-                  ),
-                  bottom:  PreferredSize(
-                  preferredSize: Size.fromHeight(Screen.navigationBarHeight + 18),
-                  child: new Container(
-                      color: Colors.yellow,
-                      child: new TabBar(
-                      indicatorSize: TabBarIndicatorSize.label,
-                      indicatorColor: Colors.green,
-                      labelColor: Colors.green,
-                      unselectedLabelColor: Colors.black45,
-                      tabs: tabs.map((Choice choice) {
-                        return new Tab(
-                          text: choice.title,
-                          icon: new Icon(choice.icon,),
-                        );
-                      }).toList(),
-                      controller: mTabController,
-                    )
-                  ),
-                ),
-                ),
-              )];
-            },
-            body: new Scaffold(
-              backgroundColor: Colors.white,
-              body: new TabBarView(children: tabs.map((Choice choice) {
-                  return new Padding(
-                      padding: const EdgeInsets.only(top: kToolbarHeight + kBottomNavigationBarHeight + kTextTabBarHeight),
-                      child:choice.position==0?new Container(
-                        child: new ListView(
-                          children: <Widget>[
-                            new ListTile(
-                              leading: new Icon(Icons.map),
-                              title: new Text('Map'),
-                            ),
-                            new ListTile(
-                              leading: new Icon(Icons.photo),
-                              title: new Text('Album'),
-                            ),
-                            new ListTile(
-                              leading: new Icon(Icons.phone),
-                              title: new Text('Phone'),
-                            ),
-                            new ListTile(
-                              leading: new Icon(Icons.map),
-                              title: new Text('Map'),
-                            ),
-                            new ListTile(
-                              leading: new Icon(Icons.photo),
-                              title: new Text('Album'),
-                            ),
-                            new ListTile(
-                              leading: new Icon(Icons.phone),
-                              title: new Text('Phone'),
-                            ),
-                          ],
-                        )
-                      ):new Container(
-                        child: new Text("ahhhhhhhhhhhhh"),
-                      )
-                  );
-                  }).toList(),
-                  controller: mTabController,
-                ),
+  
+
+  Widget _buildContent() {
+    
+    return CustomScrollView(
+      controller: scrollController,
+      shrinkWrap: true,
+      primary: false,
+      physics: _mainScrollable ? ScrollPhysics() : NeverScrollableScrollPhysics() ,
+      slivers: <Widget>[
+        new SliverToBoxAdapter(
+          child: new Listener(
+          onPointerUp: _scrollCancel,
+          child: new Stack(
+            children: <Widget>[
+              Positioned(
+                top: this._offset < 0 ? -this._offset : 0.0,
+                child: _buildHeadPlanContent(),
               ),
-          ),
-          new Container(
+              Padding(
+                padding: EdgeInsets.only(top: widget._homeTopicHeight - this._offset),
+                  child: HomeJobList(
+                    contentScrollable: _contentScrollable,
+                    tabbarItemClick: _statuTabbarItemPressed,
+                  ),
+              )
+            ],
+          ) ,
+        ),
+        ),
+      ],
+    );
+
+    
+  }
+
+  Widget _buildNavBar() {
+    return new Container(
             height: Screen.navigationBarHeight,
             child: new AppBar(
               backgroundColor: Colors.white.withOpacity(_navAplpha),
-              elevation: _navAplpha == 1 ? 1.0: 0.0,
-              title: SearchBar('images/home/icon_home_search_20x20_@3x.png',
+              elevation: _navAplpha == 1 ? 0.2: 0.0,
+              leading: _mainScrollable ? null: new IconButton(
+                icon: Image.asset('images/home/first_updown_icon_17x13_@3x.png',
+                  width: 17,
+                  height: 13,
+                  color: Color.lerp(Colors.white, Colors.black45, _navAplpha),
+                ),
+                onPressed: _leftTabItemPressed,
+              ),
+              titleSpacing: _mainScrollable ? 7.0 : 0.0,
+              centerTitle: true,
+              title: _isNavgationBarHidden ? null: SearchBar('images/home/icon_home_search_20x20_@3x.png',height: 32,
                 backgroudColor: Color.lerp(Colors.white, Colors.black12, _navAplpha),
               ),
-              actions: <Widget>[
+              actions: _isNavgationBarHidden ? null: <Widget>[
                 new IconButton(
                     icon: Image.asset('images/home/icon_resume_edit_saoYsao_20x20_@3x.png',
-                      width: 25,
-                      height: 25,
-                      color: Color.lerp(Colors.white, Colors.black12, _navAplpha),
+                      width: 20,
+                      height: 20,
+                      color: Color.lerp(Colors.white, Colors.black45, _navAplpha),
                     ),
                     onPressed: _rightTabItemPressed,
                   ),
               ],
               bottomOpacity: 0,
             )
+          );
+  }
+
+  void _scrollCancel(detail) {
+
+      _scrollRelease();
+  }
+
+  void _scrollRelease() {
+    var offset = scrollController.offset;
+    // print('offset :' + offset.toString());
+    if (offset < (widget._homeTopicHeight - Screen.navigationBarHeight) * 0.25) {
+      if (offset > 0) {
+        scrollController.animateTo(0.0,duration: new Duration(milliseconds: 300),curve: Curves.linear);
+      }
+    } else {
+      setState(() {
+        this._mainScrollable = false;
+        this._contentScrollable =true;
+      });
+      scrollController.animateTo((widget._homeTopicHeight - Screen.navigationBarHeight)*0.5,duration: new Duration(milliseconds: 300),curve: Curves.linear);
+    }
+  }
+  @override
+  Widget build(BuildContext context) {
+    
+    return new Scaffold(
+      body: new Stack(
+        children: <Widget>[
+          Positioned(
+            left: 0.0,
+            right: 0.0,
+            bottom: 0.0,
+            top: 0.0,
+            child: _buildContent(),
           ),
+          Positioned(
+            left: 0.0,
+            right: 0.0,
+            top: 0.0,
+            child: _buildNavBar()
+          )
+          
         ],
       ),
     );

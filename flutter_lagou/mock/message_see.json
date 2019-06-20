@@ -1,0 +1,75 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id": "01366578",
+        "module_name" : "seeMeHRList",
+        "content" :[
+          {
+            "inspectId": "5c90baee0a8acb50ea5e4e08",
+            "userId": 3682631,
+            "name": "涂晓萱",
+            "portrait": "https://www.lagou.com/i/image2/M01/EA/9B/CgotOVx3m0eAK31CAAHWBsqgi4425.jpeg",
+            "hrTitle": "招聘经理",
+            "companyName": "虎牙信息",
+            "dateTime": 1552988910513,
+            "status": 1,
+            "nameInitial": null,
+            "randomColor": null,
+            "autoMatchPosition": null
+          }, 
+          {
+            "inspectId": "5c8baf399d82100940a98d22",
+            "userId": 9417778,
+            "name": "梁朝开",
+            "portrait": "https://www.lagou.com/i/image/M00/8D/9A/CgpEMlrhPluAPjjjAAIlcpnKCp4898.jpg",
+            "hrTitle": "招聘专员",
+            "companyName": "99游",
+            "dateTime": 1552658233951,
+            "status": 1,
+            "nameInitial": null,
+            "randomColor": null,
+            "autoMatchPosition": {
+              "positionId": 5679514,
+              "positionName": "ios开发工程师",
+              "salary": "10k-15k",
+              "city": "广州",
+              "workYear": "1-3年",
+              "education": "大专",
+              "matchType": 3,
+              "matchDesc": "你非常擅长IOS，这个职位很适合你！"
+            }
+          }, 
+          {
+            "inspectId": "5c8a6559830f7860f20f9f12",
+            "userId": 4063083,
+            "name": "lisav",
+            "portrait": "https://www.lagou.com/i/image2/M01/E2/C3/CgotOVxvXwqAPVJ5AAA1Zgpcwfo330.png",
+            "hrTitle": "UI设计师",
+            "companyName": "博智林机器人公司",
+            "dateTime": 1552573785524,
+            "status": 1,
+            "nameInitial": null,
+            "randomColor": null,
+            "autoMatchPosition": null
+          }, 
+          {
+            "inspectId": "5c8a42ff830f7860f20bb6ad",
+            "userId": 9880434,
+            "name": "HR小姐姐",
+            "portrait": "https://www.lagou.com/i/image3/M00/1E/67/CgpOIFqPzPWAEf2EAACEsw5zYG4241.jpg",
+            "hrTitle": "招聘专员",
+            "companyName": "皓琳游戏",
+            "dateTime": 1552564991976,
+            "status": 1,
+            "nameInitial": null,
+            "randomColor": null,
+            "autoMatchPosition": null
+          }
+        ]
+      }
+    ]
+  }
+}

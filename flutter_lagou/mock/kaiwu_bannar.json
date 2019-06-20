@@ -1,0 +1,20 @@
+{
+	"state": 1,
+	"message": "操作成功",
+	"content": [{
+		"id": null,
+		"title": "7天成长训练营（初级HR）",
+		"image": "https://www.lgstatic.com/i/image2/M01/A9/26/CgotOVvo646AKEmrAAQltG6Gn30054.png",
+		"url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_hr_index.html?lagoufrom=noapp",
+		"shareDesc": null,
+		"displayPosition": null
+	}, {
+		"id": null,
+		"title": "7天成长训练营",
+		"image": "https://www.lgstatic.com/i/image2/M01/A9/26/CgotOVvo63iABe1WAAMTPFEo7Rw856.png",
+		"url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index.html",
+		"shareDesc": null,
+		"displayPosition": null
+	}],
+	"uiMessage": null
+}

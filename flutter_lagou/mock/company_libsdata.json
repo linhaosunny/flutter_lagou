@@ -1,0 +1,155 @@
+{
+	"state": 1,
+	"message": "操作成功",
+	"data":{
+		"module":[
+			{
+				"id": "2415",
+				"module_name": "companylibs",
+				"content":[
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image/M00/86/12/Cgp3O1hjNlmAFrqZAAAge2ERXlk561.jpg",
+						"companyId": "17863",
+						"companyShortName": "骑鹅旅行",
+						"positionNum": 93,
+						"companyScore": 3.9,
+						"city": "广州",
+						"fundsStage": "A轮",
+						"scale": "50-150人",
+						"industry": "旅游,数据服务",
+						"hiTags": [],
+						"companyTags": ["绩效奖金", "年度旅游", "扁平管理", "管理规范", "五险一金", "15天年假", "交通补助", "领导好", "定期体检"],
+						"description": "A Smart Meta Search With Facilitated Bookings."
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image/M00/5E/61/CgqKkVfrNDSAXSvqAAECvYqe3hY894.jpg",
+						"companyId": "66619",
+						"companyShortName": "智悅网络",
+						"positionNum": 92,
+						"companyScore": 4.3,
+						"city": "广州",
+						"fundsStage": "A轮",
+						"scale": "50-150人",
+						"industry": "移动互联网,电子商务",
+						"hiTags": [],
+						"companyTags": ["五险一金", "年底双薪", "专项奖金", "带薪年假", "年终奖丰厚", "股票期权", "丰富下午茶", "90后", "晋升空间"],
+						"description": "松果倾诉APP-放心说心事！"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image2/M00/31/30/CgotOVo869uATwg4AAAKb_FiYNM315.png",
+						"companyId": "167745",
+						"companyShortName": "SuperADS",
+						"positionNum": 85,
+						"companyScore": 4.1,
+						"city": "广州",
+						"fundsStage": "A轮",
+						"scale": "50-150人",
+						"industry": "移动互联网,广告营销",
+						"hiTags": ["免费下午茶", "创新人才支持", "地铁周边", "每天管两餐", "创新项目支持", "晋升机制", "创新经费支持"],
+						"companyTags": ["股票期权", "绩效奖金", "专项奖金", "年终分红", "技能培训", "扁平管理", "帅哥多", "美女多", "领导好"],
+						"description": "深耕企业国际化服务，客户永久价值，爱拼，能拼，敢拼你就来吧！"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image2/M00/47/CB/CgoB5lrcLZmATfHrAAAV97DcXHs181.jpg",
+						"companyId": "321881",
+						"companyShortName": "星舆科技",
+						"positionNum": 68,
+						"companyScore": null,
+						"city": "广州",
+						"fundsStage": "A轮",
+						"scale": "50-150人",
+						"industry": "移动互联网,数据服务",
+						"hiTags": [],
+						"companyTags": ["绩效奖金", "股票期权", "交通补助", "通讯津贴", "带薪年假"],
+						"description": "人工智能时代精准时空运营商，提供室内外一体化的高精度空间位置信息服务以及端到端的高精度解决方案。"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image3/M00/3D/FD/Cgq2xlqwuj6AXmqZAAAxLPgr9cI679.png",
+						"companyId": "67777",
+						"companyShortName": "快批KP",
+						"positionNum": 62,
+						"companyScore": 4.4,
+						"city": "广州",
+						"fundsStage": "A轮",
+						"scale": "50-150人",
+						"industry": "移动互联网,数据服务",
+						"hiTags": [],
+						"companyTags": ["年底双薪", "节日礼物", "技能培训", "绩效奖金", "岗位晋升", "年度旅游", "定期体检", "带薪年假", "午餐补助"],
+						"description": "企业移动应用领跑者、互联网电商平台、大数据、互联网金融"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image2/M01/57/01/CgoB5lsfadaAPR4mAAB6ex4urT8536.jpg",
+						"companyId": "25623",
+						"companyShortName": "爱范儿",
+						"positionNum": 58,
+						"companyScore": 4.5,
+						"city": "广州",
+						"fundsStage": "上市公司",
+						"scale": "50-150人",
+						"industry": "移动互联网,企业服务",
+						"hiTags": [],
+						"companyTags": ["绩效奖金", "五险一金", "弹性工作", "岗位晋升", "技能培训", "管理规范", "领导好", "扁平管理", "周末双休"],
+						"description": "让未来触手可及"
+					},
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image/M00/81/76/CgpEMlpTMSKAan1jAAAGm5HPZCs424.png",
+						"companyId": "204811",
+						"companyShortName": "维朗",
+						"positionNum": 57,
+						"companyScore": null,
+						"city": "广州",
+						"fundsStage": "不需要融资",
+						"scale": "50-150人",
+						"industry": "移动互联网,招聘",
+						"hiTags": [],
+						"companyTags": [],
+						"description": "扁平化组织 领导nice"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image/M00/63/08/CgqKkVgAP3qAOW0KAAARjYqxNC4326.jpg",
+						"companyId": "128945",
+						"companyShortName": "触漫",
+						"positionNum": 56,
+						"companyScore": 4.7,
+						"city": "广州",
+						"fundsStage": "A轮",
+						"scale": "50-150人",
+						"industry": "移动互联网,文化娱乐",
+						"hiTags": [],
+						"companyTags": ["股票期权", "领导好", "五险一金", "扁平管理", "免费零食", "带薪年假", "弹性工作", "接送班车", "每月团建"],
+						"description": "享受创作的快乐"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/i/image3/M00/18/35/CgpOIFp3yIiAGAvPAAKehZSIphk030.png",
+						"companyId": "133343",
+						"companyShortName": "口袋零钱",
+						"positionNum": 49,
+						"companyScore": 4.3,
+						"city": "广州",
+						"fundsStage": "未融资",
+						"scale": "50-150人",
+						"industry": "移动互联网,金融",
+						"hiTags": [],
+						"companyTags": ["周末双休", "发展空间大"],
+						"description": "打造行业首个移动金融特惠生活圈。"
+					}, 
+					{
+						"companyLogo": "https://www.lgstatic.com/thumbnail_200x200/image1/M00/00/78/Cgo8PFTUXbOADCePAABGiLZDnKs891.png",
+						"companyId": "46854",
+						"companyShortName": "佰锐科技",
+						"positionNum": 43,
+						"companyScore": 4.4,
+						"city": "广州",
+						"fundsStage": "未融资",
+						"scale": "50-150人",
+						"industry": "移动互联网,数据服务",
+						"hiTags": [],
+						"companyTags": ["节假日福利", "年度旅游", "岗位晋升", "人性化", "年终奖", "管理规范", "领导好", "年终分红", "每月集体活动", "团队年轻", "萌妹子多"],
+						"description": "完善透明的职业晋升通道，只要你有能力有本事，公司不拘一格用人才！"
+					}
+				]
+			}
+		]
+	}
+
+}

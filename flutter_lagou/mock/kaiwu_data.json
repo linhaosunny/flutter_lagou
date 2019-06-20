@@ -1,0 +1,135 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id": "3426",
+        "module_name": "topbanner",
+        "content": [
+          {
+            "id": "00001",
+            "title": "7天成长训练营（初级HR）",
+            "image_url": "https://www.lgstatic.com/i/image2/M01/A9/26/CgotOVvo646AKEmrAAQltG6Gn30054.png",
+            "link_url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_hr_index.html?lagoufrom=noapp",
+            "shareDesc": null,
+            "displayPosition": null
+          }, {
+            "id": "00002",
+            "title": "7天成长训练营",
+            "image_url": "https://www.lgstatic.com/i/image2/M01/A9/26/CgotOVvo63iABe1WAAMTPFEo7Rw856.png",
+            "link_url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index.html",
+            "shareDesc": null,
+            "displayPosition": null
+          }
+        ]
+      },
+      {
+        "id": "3427",
+        "module_name": "coursecell",
+        "content": [
+          {
+            "title": "7天成长训练营",
+            "subTitle": null,
+            "description": null,
+            "tag": "精选课",
+            "courseInfo": {
+              "title": "手把手教你做个专业运营人",
+              "subTitle": "适合0-3年经验运营新人",
+              "description": "",
+              "tag": null,
+              "originalPrice": 1296,
+              "price": 599,
+              "image": "https://www.lgstatic.com/i/image2/M01/90/D6/CgotOVujboaAEqWjAAGO9joVvUA404.png",
+              "presenterName": "鲍艾乐 Ella",
+              "presenterTitle": "拉勾联合创始人及CMO",
+              "h5Url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index.html",
+              "totalChapter": 4
+            },
+            "productId": 5,
+            "purchased": false,
+            "orderNo": null,
+            "courseCharp": [
+              {
+                "chapter": {
+                  "title": "重塑运营观",
+                  "subTitle": "互联网运营岗分支及能力要求详解",
+                  "description": null,
+                  "tag": null,
+                  "originalPrice": null,
+                  "price": 99,
+                  "image": null,
+                  "presenterName": null,
+                  "presenterTitle": null,
+                  "h5Url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index1.html",
+                  "totalSection": 4,
+                  "totalMinutes": 60
+                },
+                "productId": 6,
+                "purchased": false,
+                "orderNo": null
+              }, 
+              {
+                "chapter": {
+                  "title": "7天专项突破 | 用户运营",
+                  "subTitle": "让注册用户变成“自来水”的关键",
+                  "description": null,
+                  "tag": null,
+                  "originalPrice": null,
+                  "price": 399,
+                  "image": null,
+                  "presenterName": null,
+                  "presenterTitle": null,
+                  "h5Url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index2.html",
+                  "totalSection": 5,
+                  "totalMinutes": 70
+                },
+                "productId": 7,
+                "purchased": false,
+                "orderNo": null
+              }, 
+              {
+                "chapter": {
+                  "title": "7天专项突破 | 新媒体运营",
+                  "subTitle": "还在更新订阅号？高阶必懂矩阵搭建与粉丝管理",
+                  "description": null,
+                  "tag": null,
+                  "originalPrice": null,
+                  "price": 399,
+                  "image": null,
+                  "presenterName": null,
+                  "presenterTitle": null,
+                  "h5Url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index3.html",
+                  "totalSection": 6,
+                  "totalMinutes": 100
+                },
+                "productId": 8,
+                "purchased": false,
+                "orderNo": null
+              },
+              {
+                "chapter": {
+                  "title": "7天专项突破 | 活动运营",
+                  "subTitle": "可复用的千人场活动操盘秘籍，你做对了几步？",
+                  "description": null,
+                  "tag": null,
+                  "originalPrice": null,
+                  "price": 399,
+                  "image": null,
+                  "presenterName": null,
+                  "presenterTitle": null,
+                  "h5Url": "https://activity.lagou.com/activity/dist/2018-offer-class/m_index4.html",
+                  "totalSection": 6,
+                  "totalMinutes": 100
+                },
+                "productId": 9,
+                "purchased": false,
+                "orderNo": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

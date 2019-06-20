@@ -1,0 +1,466 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id": "3476",
+        "module_name": "billboardlist",
+        "content": [
+          {
+              "id": "00001",
+              "title": "员工最Pick的互联网大厂「2」",
+              "sub_title": "跳槽频率低，福利待遇好",
+              "link_url": "",
+              "content_type": "billboard",
+              "companys": [
+                {
+                  "companyId" : "00003a01",
+                  "companyShortName" : "滴滴出行",
+                  "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/00/20/Cgp3O1YtmkSAZjX1AAA78knErXc273.jpg",
+                  "description" : "父母住院，公司提供高额报销+护工费"
+                },
+                {
+                  "companyId" : "001b7007",
+                  "companyShortName" : "美柚",
+                  "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/0A/F5/CgpEMljfdd-AE8-uAAA8aMbtiuk235.png",
+                  "description" : "男女员工每月半天“姨妈假”"
+                },
+                {
+                  "companyId" : "0204v005",
+                  "companyShortName" : "去哪儿网",
+                  "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/06/CgYXBlTUWAeANQBuAABHTL1SBa8889.jpg",
+                  "description" : "年终16薪，无息住房贷款，旅游补贴"
+                }
+              ]
+          },
+          {
+            "id": "00002",
+            "title": "2018GITC专家顾问来自这些公司",
+            "sub_title": "技术大咖风向标",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "0003b067",
+                "companyShortName" : "微店",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/0F/B0/Cgo8PFT9bUuAFYmqAABKRDf-Ah0371.jpg",
+                "description" : "平均日活高达百万级的手机开店App"
+              },
+              {
+                "companyId" : "00zf0c02",
+                "companyShortName" : "搜狗",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/4C/50/CgpEMllofwqAEKNQAAAs_j5TrEo719.jpg",
+                "description" : "中国领先的互联网搜索、输入、浏览等产品及服务提供商。"
+              },
+              {
+                "companyId" : "0045u0055",
+                "companyShortName" : "完美世界",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/15/CgYXBlTUWECAXAksAABGkmdtwig327.jpg",
+                "description" : "中国领先的网络游戏开发商和运营商"
+              }
+            ]
+          },
+          {
+            "id": "00003",
+            "title": "近两年融资连连、扶摇直上的独角兽",
+            "sub_title": "这是你加入一家公司的最好时机",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "0005z0w4",
+                "companyShortName" : "货拉拉",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/66/Cgo8PFTUXWSACW7OAACKSYYZpsc111.png",
+                "description" : "专注于货运O2O领域的App|D轮，3亿美元"
+              },
+              {
+                "companyId" : "002f1c07",
+                "companyShortName" : "编程猫",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/A7/CC/CgotOVvj6WaAZumTAABzkH-bhag884.jpg",
+                "description" : "中国知名青少年编程教育品牌|B轮，2亿美元"
+              },
+              {
+                "companyId" : "004bv0c51",
+                "companyShortName" : "瑞幸咖啡",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/7F/82/CgotOVt70maAMEDOAADbXfJoaZU588.jpg",
+                "description" : "互联网新零售咖啡行业独角兽|B轮,2亿美元"
+              }
+            ]
+          },
+          {
+            "id": "00004",
+            "title": "程序猿望京必看的十大公司",
+            "sub_title": "美女码农汇聚地",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "000310g4",
+                "companyShortName" : "阿里巴巴-高德",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/DA/2B/CgoB5lxlALuAVqFqAAAMZt7n5C8976.jpg",
+                "description" : "中国领先的数字地图内容、导航和位置服务解决服务商。"
+              },
+              {
+                "companyId" : "00t51d08",
+                "companyShortName" : "小红书",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/35/C1/Cgo8PFWcoTKARPNOAABLnbTivc8708.png",
+                "description" : "2亿年轻用户的生活方式平台"
+              },
+              {
+                "companyId" : "004dz0904",
+                "companyShortName" : "一点资讯",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/11/CgYXBlTUWDOAeZQdAABbV0qQVPE716.jpg",
+                "description" : "一款拥有强大技术团队的高度智能的新闻资讯应用"
+              }
+            ]
+          },
+          {
+            "id": "00005",
+            "title": "你听过的产品，来自这些公司",
+            "sub_title": "原来是这家公司的呀",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "000410g7",
+                "companyShortName" : "一下科技",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/22/61/Cgp3O1cUq6yAMA-_AAAOM7mNTQc202.jpg",
+                "description" : "秒拍+小咖秀+一直播"
+              },
+              {
+                "companyId" : "00s67d08",
+                "companyShortName" : "掌阅",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/B8/D7/Cgp3O1jCJr-AZ4r7AACTl0VdoIo863.png",
+                "description" : "掌阅APP+iReader电子书阅读器"
+              },
+              {
+                "companyId" : "004cb1607",
+                "companyShortName" : "果壳网",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/16/CgYXBlTUWEaAaB5jAACYgc4pee4229.png",
+                "description" : "果壳+一饭+在行一点"
+              }
+            ]
+          },
+          {
+            "id": "00005",
+            "title": "大家耳熟能详的产品出自这些公司",
+            "sub_title": "他们的产品风头正劲",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "000110g1",
+                "companyShortName" : "字节跳动",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/79/0A/CgoB5ltr2A-AM5SFAADbT9jQCn841.jpeg",
+                "description" : "最早把人工智能技术大规模应用于信息分发的公司之一。"
+              },
+              {
+                "companyId" : "0024cd08",
+                "companyShortName" : "快手",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M00/26/EF/CgoB5lof5AuADFWJAAAK3VU74GU045.png",
+                "description" : "一个记录和分享生活的短视频社交平台"
+              },
+              {
+                "companyId" : "005cb1b03",
+                "companyShortName" : "爱奇艺",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/86/41/CgpFT1rOxKOAXsCwAAB1tzB2sOU050.jpg",
+                "description" : "热剧集中营，流量汇聚地"
+              }
+            ]
+          },
+          {
+            "id": "00006",
+            "title": "2018GITC主席团大咖公司",
+            "sub_title": "",
+            "link_url": "",
+            "content_type": "cellboard",
+            "companys": [
+              {
+                "companyId" : "00ccb2b03",
+                "companyShortName" : "金山云",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/04/Cgo8PFTUWACAWautAAAh6gMfsB0502.jpg",
+                "description" : ""
+              },
+              {
+                "companyId" : "00bcb1b01",
+                "companyShortName" : "陌陌",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/C3/CB/Cgp3O1jcvUOATXv_AABZ6zpEAKk174.jpg",
+                "description" : ""
+              },
+              {
+                "companyId" : "00czb2b02",
+                "companyShortName" : "唱吧",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/0F/32/CgYXBlT8_rWAFbTEAAByn5Iy17c699.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00czb2b02",
+                "companyShortName" : "喜马拉雅",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/10/5B/CgYXBlT-quOAC81GAABTRbCEyH0698.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00czb2b02",
+                "companyShortName" : "映客",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/08/49/Cgp3O1bPycGAMj0hAAAgshBCvv4840.jpg",
+                "description" : ""
+              }
+            ]
+          },
+          {
+            "id": "00007",
+            "title": "员工最Pick的互联网大厂",
+            "sub_title": "跳槽频率低，福利待遇好",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "000210g1",
+                "companyShortName" : "蚂蚁金服集团",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/1F/54/CgpFT1kRuMmASL74AAAg3WZnNI005.jpeg",
+                "description" : "正常奖金范围4-5个月，一定级别入职配期权"
+              },
+              {
+                "companyId" : "002110g1",
+                "companyShortName" : "腾讯",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/03/CgYXBlTUV_qALGv0AABEuOJDipU378.jpg",
+                "description" : "“易居计划”，为基层员工提供50万免息住房贷款"
+              },
+              {
+                "companyId" : "005cb1b03",
+                "companyShortName" : "英语流利说",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/4D/EE/CgpEMllsh2iAJ_u8AAAx6RdgCFY178.png",
+                "description" : "免费私厨三餐，硅谷办公环境、AI技术的HACK..."
+              }
+            ]
+          },
+          {
+            "id": "00008",
+            "title": "程序猿西二旗必看十大公司",
+            "sub_title": "码农联合聚集地",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "000340g12",
+                "companyShortName" : "火币网",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/04/B1/CgpOIFper86Ae5JTAAA4NFOGWB0954.png",
+                "description" : "全球领先的区块链资产交易平台"
+              },
+              {
+                "companyId" : "004510g7",
+                "companyShortName" : "车好多集团",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/DB/4A/CgotOVxmWR6AHajrAAAPTaxGj4w370.jpg",
+                "description" : "提供车况最佳的个人二手车直接买卖服务平台"
+              },
+              {
+                "companyId" : "0078b1c04",
+                "companyShortName" : "微创",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/69/C4/CgoB5ltIYk-Aem2yAAA8xEL1jvM451.jpg",
+                "description" : "中国互联网+的领跑者，国际化的IT服务提供商"
+              }
+            ]
+          },
+          {
+            "id": "00009",
+            "title": "那些天才程序员都在这些公司",
+            "sub_title": "",
+            "link_url": "",
+            "content_type": "cellboard",
+            "companys": [
+              {
+                "companyId" : "00ccb1b07",
+                "companyShortName" : "搜狐集团",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/15/40/Cgq2xlpxrIKAPFRwAAAzLesdOpI884.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00acb1b01",
+                "companyShortName" : "阿里文娱",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/38/51/CgpFT1lKOQ-AGJHLAAAN2AxGncw939.jpg",
+                "description" : ""
+              },
+              {
+                "companyId" : "00byc2b04",
+                "companyShortName" : "百度",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/21/3E/CgpFT1kVdzeAJNbUAABJB7x9sm8374.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00czy2b05",
+                "companyShortName" : "美菜网",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/E3/42/CgoB5lxvw1CAWi5QAACQMRbrbVM172.jpg",
+                "description" : ""
+              },
+              {
+                "companyId" : "002110g1",
+                "companyShortName" : "腾讯",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/03/CgYXBlTUV_qALGv0AABEuOJDipU378.jpg",
+                "description" : ""
+              }
+            ]
+          },
+          {
+            "id": "00010",
+            "title": "互联网旅游平台，打破传统出发",
+            "sub_title": "选对行业，华丽转身",
+            "link_url": "",
+            "content_type": "cellboard",
+            "companys": [
+              {
+                "companyId" : "00ccb1c01",
+                "companyShortName" : "携程",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/0E/Cgo8PFTUWCWAOQHbAABtwKGNZK8276.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00acb7b07",
+                "companyShortName" : "小猪短租",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/02/83/Cgp3O1aTEaKAQFTOAAASuFA05K8957.jpg",
+                "description" : ""
+              },
+              {
+                "companyId" : "00byc2b08",
+                "companyShortName" : "马蜂窝",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/25/96/Cgq2xlqXn9-ALvW-AAAR5MK8aqs262.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00yzy6b07",
+                "companyShortName" : "Booking.com",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/7F/CgYXBlTUXc2AFmbnAABH5a3ptkg175.jpg",
+                "description" : ""
+              },
+              {
+                "companyId" : "002b20g2",
+                "companyShortName" : "同程艺龙",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/2F/96/CgpOIFqg6FGADM6vAAAza4ibwgw229.png",
+                "description" : ""
+              }
+            ]
+          },
+          {
+            "id": "00011",
+            "title": "有钱任性公司，承包你大主卧",
+            "sub_title": "住房补贴，租房无忧",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "000110g1",
+                "companyShortName" : "字节跳动",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/79/0A/CgoB5ltr2A-AM5SFAADbT9jQCn841.jpeg",
+                "description" : "就近租房补贴，出了公司就是家"
+              },
+              {
+                "companyId" : "007530g3",
+                "companyShortName" : "火花思维",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/46/B5/CgpOIFrDMNKAIbIoAABTKiA237w110.png",
+                "description" : "风投宠儿，福利优厚"
+              },
+              {
+                "companyId" : "00byc2b04",
+                "companyShortName" : "百度",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/21/3E/CgpFT1kVdzeAJNbUAABJB7x9sm8374.png",
+                "description" : "老牌互联网大厂，薪水高福利好"
+              }
+            ]
+          },
+          {
+            "id": "00012",
+            "title": "中关村必看十大公司",
+            "sub_title": "挑对公司，赢在起点",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "005cb1b03",
+                "companyShortName" : "爱奇艺",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/86/41/CgpFT1rOxKOAXsCwAAB1tzB2sOU050.jpg",
+                "description" : "一家以科技创新为驱动的伟大娱乐公司"
+              },
+              {
+                "companyId" : "009530g9",
+                "companyShortName" : "汽车之家",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/01/80/CgqKkVZuPraAN3O6AACFeBgN7dY620.jpg",
+                "description" : "中国领先的汽车互联网平台，你的汽车之家"
+              },
+              {
+                "companyId" : "0204v005",
+                "companyShortName" : "去哪儿网",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/06/CgYXBlTUWAeANQBuAABHTL1SBa8889.jpg",
+                "description" : "全球最大中文旅行平台，用科技改变旅行"
+              }
+            ]
+          },
+          {
+            "id": "00013",
+            "title": "拉勾APP面试好评的公司",
+            "sub_title": "面试官nice，优质体验",
+            "link_url": "",
+            "content_type": "cellboard",
+            "companys": [
+              {
+                "companyId" : "00wc15w02",
+                "companyShortName" : "AdMaster",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/00/98/Cgp3O1ZOwlKAfldgAAAJgxfgfnE671.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00vcb3b03",
+                "companyShortName" : "熊猫直播",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/50/6F/Cgp3O1ez-maAVqVvAACHDXnYX1w719.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00cyc1b01",
+                "companyShortName" : "College.Pre",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/20/34/CgqKkVcNqBeAYckSAABcmSKGU7w280.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "00wzy7b07",
+                "companyShortName" : "图森未来",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/AB/F6/CgotOVvugHaAdiKpAAA48RxWUEY459.png",
+                "description" : ""
+              },
+              {
+                "companyId" : "001121g1",
+                "companyShortName" : "腾讯众创",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/16/8D/Cgp3O1bvuVmASyomAALuc6NOLHU925.jpg",
+                "description" : ""
+              }
+            ]
+          },
+          {
+            "id": "00014",
+            "title": "遇见T+未来",
+            "sub_title": "背靠腾讯，发展无限",
+            "link_url": "",
+            "content_type": "billboard",
+            "companys": [
+              {
+                "companyId" : "008cb8b08",
+                "companyShortName" : "众安保险",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/55/39/CgqKkVfGfBuAOWGAAAIUmwY0VKI054.jpg",
+                "description" : "国内首家创新型互联网保险公司"
+              },
+              {
+                "companyId" : "002530g5",
+                "companyShortName" : "阅文集团",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/66/AB/CgpFT1mnc9qAW5utAAAZPTBrPD4069.png",
+                "description" : "掀起“全民阅读”狂潮"
+              },
+              {
+                "companyId" : "0301v008",
+                "companyShortName" : "虎牙信息",
+                "companyLogo" : "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/26/82/CgpOIFqYuLWALKzWAAFLawjv7b8596.jpg",
+                "description" : "中国领先的互动直播平台"
+              }
+            ]
+          }
+        ]
+      }
+  ]}
+}

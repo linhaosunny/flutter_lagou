@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lagou/widgets/speech/navbar.dart';
+import 'package:flutter_lagou/widgets/speech/speech_public.dart';
 
 class SpeechPage extends StatefulWidget {
   @override
   _SpeechPageState createState() => _SpeechPageState();
 }
 
-class _SpeechPageState extends State<SpeechPage> {
+class _SpeechPageState extends State<SpeechPage> with SingleTickerProviderStateMixin {
   final double _appBarHeight = 160.0;
   final List<Tab> _tabMenus = <Tab> [
     new Tab(text: '开悟'),
@@ -14,12 +14,38 @@ class _SpeechPageState extends State<SpeechPage> {
     new Tab(text: '话题'),
     new Tab(text: '专栏'),
   ];
-
+ 
   void _leftTabItemPressed() {
 
   }
 
   void _rightTabItemPressed() {
+
+  }
+
+  List <Widget> _buildTabView() {
+    List <Widget> tabViews = [
+      SpeechKaiwu(),
+      SpeechJingXuan(),
+      SpeechJingXuan(),
+      SpeechZhuanlan()
+    ];
+    return tabViews;
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    //判断TabBar是否切换
+   
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
 
   }
 
@@ -35,8 +61,8 @@ class _SpeechPageState extends State<SpeechPage> {
           leading: new Container(
             child: new IconButton(
               icon: Image.asset('images/speech/community_icon_search_18x18_@3x.png',
-                width: 25,
-                height: 25,
+                width: 22,
+                height: 22,
               ),
               onPressed: _leftTabItemPressed,
             ),
@@ -51,8 +77,8 @@ class _SpeechPageState extends State<SpeechPage> {
           actions: <Widget>[
             new IconButton(
               icon: Image.asset('images/speech/community_icon_mypage_18x21_@3x.png',
-                width: 25,
-                height: 25,
+                width: 22,
+                height: 22,
               ),
               onPressed: _rightTabItemPressed,
             ),
@@ -62,19 +88,17 @@ class _SpeechPageState extends State<SpeechPage> {
             isScrollable: true,
             indicatorSize: TabBarIndicatorSize.label,
             indicatorColor: new Color.fromARGB(255, 15, 185, 125),
-            indicatorWeight: 4.0,
-            indicatorPadding: EdgeInsets.fromLTRB(8, 0, 8, 1),
+            indicatorWeight: 2.0,
+            indicatorPadding: EdgeInsets.fromLTRB(8, 0, 8, 2),
             labelColor: Colors.black87,
             labelPadding: new EdgeInsets.only(left: 30.0,right: 30.0),
-            labelStyle: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold),
+            labelStyle: new TextStyle(fontSize: 16.0,fontWeight: FontWeight.bold),
             unselectedLabelColor: Colors.black54,
-            unselectedLabelStyle: new TextStyle(fontSize: 18.0),
+            unselectedLabelStyle: new TextStyle(fontSize: 16.0),
           ),
         ),
         body: new TabBarView(
-          children: _tabMenus.map((Tab tab) {
-              return new Center(child: new Text(tab.text));
-            }).toList(),
+          children: _buildTabView(),
         ),
       )
     );

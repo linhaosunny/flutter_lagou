@@ -1,0 +1,196 @@
+{
+    "state": "200",
+    "message": "success",
+    "data": {
+        "module": [
+            {
+                "id" : "01000210",
+                "module_name": "recommandjobs",
+                "content": [
+                    {
+                        "job_id" : "0222270005",
+                        "job_name" : "WXG07-117广州研发部iOS开发工程师",
+                        "payments": "15-30K",
+                        "requirements": "广州|新港|1年以下|本科",
+                        "published_date": "02月10日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/03/CgYXBlTUV_qALGv0AABEuOJDipU378.jpg",
+                        "company_name": "腾讯",
+                        "company_profile": "上市公司|2000人以上|移动互联网，游戏",
+                        "job_label": []
+                    },
+                    {
+                        "job_id" : "0223220001",
+                        "job_name" : "iOS运营",
+                        "payments": "15-30K",
+                        "requirements": "广州|天河公园|1-3年|大专",
+                        "published_date": "02月14日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image2/M00/3F/10/CgotOVpXBrCAQO8nAABYaV65akQ469.jpg",
+                        "company_name": "三七互娱",
+                        "company_profile": "上市公司|2000人以上|游戏",
+                        "job_label": ["游戏","渠道","ASO","APP推广","SEO"]
+                    },
+                    {
+                        "job_id" : "0223200004",
+                        "job_name" : "Andriod iOS APP开发工程师",
+                        "payments": "8-16K",
+                        "requirements": "广州|番禺区|3-5年|本科",
+                        "published_date": "02月16日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/40/CD/CgpOIFqzab-ALamzAAMPmKSHKsI140.png",
+                        "company_name": "玄道科技",
+                        "company_profile": "未融资|50-150人|移动互联网，教育",
+                        "job_label": ["移动端"]
+                    },
+                    {
+                        "job_id" : "0225200006",
+                        "job_name" : "iOS开发工程师(游戏SDK)",
+                        "payments": "8-15K",
+                        "requirements": "广州|龙口|1-3年|大专",
+                        "published_date": "02月16日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image2/M00/54/21/CgotOVsYrCqAB04cAAAZ48_rE_U924.png",
+                        "company_name": "寻趣游戏",
+                        "company_profile": "天使轮|15-50人|游戏",
+                        "job_label": ["游戏","前端开发","移动端"]
+                    },
+                    {
+                        "job_id" : "0235200009",
+                        "job_name" : "ios/安卓开发工程师",
+                        "payments": "10-15K",
+                        "requirements": "广州|天河城|应届毕业生|本科",
+                        "published_date": "02月11日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/0D/CgYXBlTUWCCACB6ZAAA7eaoPVW8054.jpg",
+                        "company_name": "联通支付",
+                        "company_profile": "不需要融资|2000人以上|移动互联网，O2O",
+                        "job_label": ["信息安全","支付","移动端","Andriod"]
+                    },
+                    {
+                        "job_id" : "0235200009",
+                        "job_name" : "H5开发工程师（IOS方向）",
+                        "payments": "8-15K",
+                        "requirements": "广州|海珠区|经验不限|大专",
+                        "published_date": "02月12日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/71/B7/CgqKkVgq0gCAYMukAABZIxPxiZg106.png",
+                        "company_name": "要玩游戏",
+                        "company_profile": "上市公司|150-500人|游戏",
+                        "job_label": ["游戏","HTML5"]
+                    },
+                    {
+                        "job_id" : "0235200009",
+                        "job_name" : "iOS游戏SDK工程师",
+                        "payments": "8-15K",
+                        "requirements": "广州|棠下|3-5年|本科",
+                        "published_date": "02月11日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/76/5C/CgpEMlo8uYGAcxE8AAB6RnYB44A295.jpg",
+                        "company_name": "星飞",
+                        "company_profile": "天使轮|150-500人|游戏",
+                        "job_label": ["旅游","游戏","Andriod"]
+                    },
+                    {
+                        "job_id" : "01141670001",
+                        "job_name" : "iOS开发",
+                        "payments": "10-15K",
+                        "requirements": "广州|五山|3-5年|本科",
+                        "published_date": "02月14日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/8C/67/CgqKkVh_MISAKWPBAAA2hk7HDbc727.jpg",
+                        "company_name": "蜘点商业",
+                        "company_profile": "不需要融资|2000人以上|移动互联网，电子商务",
+                        "job_label": ["移动互联网"]
+                    },
+                    {
+                        "job_id" : "01111970024",
+                        "job_name" : "ZBBU-iOS开发工程师（酷狗直播）",
+                        "payments": "15-30K",
+                        "requirements": "广州|棠下|3-5年|本科",
+                        "published_date": "02月12日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/30/0E/CgpFT1k5D_yADEvSAAAWVK2XbLY366.jpg",
+                        "company_name": "酷狗音乐",
+                        "company_profile": "不需要融资|500-2000人|移动互联网，文化娱乐",
+                        "job_label": []
+                    },
+                    {
+                        "job_id" : "01113940006",
+                        "job_name" : "资深ios开发工程师/开发经理",
+                        "payments": "18-30K",
+                        "requirements": "广州|林和|5-10年|本科",
+                        "published_date": "02月15日",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/63/AE/CgpFT1mfvG2AZxGvAAAWTUTsxco950.png",
+                        "company_name": "租租车",
+                        "company_profile": "B轮|500-2000人|旅游，生活服务",
+                        "job_label": ["Andriod"]
+                    }
+                ]
+            },
+            {
+                "id" : "01000211",
+                "module_name" : "newsjobs",
+                "content":[
+                    {
+                        "job_id" : "0140250003",
+                        "job_name" : "iOS开发工程师-中级",
+                        "payments": "8-16K",
+                        "requirements": "广州|琶洲|3-5年|本科",
+                        "published_date": "18:21",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/image1/M00/00/08/CgYXBlTUWA2ASQv1AAAk72Yy2t0034.png",
+                        "company_name": "播种网",
+                        "company_profile": "天使轮|50-150人|移动互联网，医疗健康",
+                        "job_label": []
+                    },
+                    {
+                        "job_id" : "0171270024",
+                        "job_name" : "IOS研发工程师（高级）",
+                        "payments": "10-20K",
+                        "requirements": "广州|棠下|1-3年|本科",
+                        "published_date": "18:20",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/21/94/Cgq2xlqT3IOASuJWAACX_zjE26w825.png",
+                        "company_name": "爱玩游戏",
+                        "company_profile": "不需要融资|15-50人|移动互联网，游戏",
+                        "job_label": ["游戏","招聘","移动端"]
+                    },
+                    {
+                        "job_id" : "0191830066",
+                        "job_name" : "高级iOS开发工程师（新项目）",
+                        "payments": "10-20K",
+                        "requirements": "广州|天河区|3-5年|本科",
+                        "published_date": "21:00",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image3/M00/2A/36/CgpOIFqdB3uAS2AiAAAOySQ5lxw214.jpg",
+                        "company_name": "荔枝",
+                        "company_profile": "D轮及以上|500-2000人|移动互联网",
+                        "job_label": ["移动互联网","社交","移动端"]
+                    },
+                    {
+                        "job_id" : "0181710062",
+                        "job_name" : "高级iOS开发工程师",
+                        "payments": "16-22K",
+                        "requirements": "广州|海珠区|3-5年|本科",
+                        "published_date": "21:00",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/89/18/CgoB5luSPwKAGGhGAABMNuDPa78919.jpg",
+                        "company_name": "微咔世纪",
+                        "company_profile": "A轮|50-150人|移动互联网，社交网络",
+                        "job_label": ["社交","工具软件"]
+                    },
+                    {
+                        "job_id" : "0120270007",
+                        "job_name" : "ios开发工程师【番禺节能科技园】",
+                        "payments": "8-15K",
+                        "requirements": "广州|市桥|1-3年|大专",
+                        "published_date": "20:57",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image/M00/7D/45/CgpFT1pS6v-AI-3GAAAqyzTQqR4305.png",
+                        "company_name": "经传多赢",
+                        "company_profile": "不需要融资|2000人以上|移动互联网，金融",
+                        "job_label": ["移动互联网","金融","移动端"]
+                    },
+                    {
+                        "job_id" : "01111290005",
+                        "job_name" : "ios工程师",
+                        "payments": "10-20K",
+                        "requirements": "广州|新港|1-3年|本科",
+                        "published_date": "19:11",
+                        "company_logo": "https://www.lgstatic.com/thumbnail_300x300/i/image2/M01/91/DB/CgoB5luo-y6AK5taAABO857mxKg046.png",
+                        "company_name": "有车以后",
+                        "company_profile": "C轮|150-500人|移动互联网",
+                        "job_label": ["汽车","移动互联网"]
+                    }
+                ]
+            }
+        ]
+    }
+}

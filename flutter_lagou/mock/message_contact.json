@@ -1,0 +1,382 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id" : "0234578",
+        "module_name" : "quickContactList",
+        "content" :[
+          "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B1/B9/CgoB5lv_W1OACXXzAAAWbX89NVo181.png",
+          "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/D9/68/CgotOVxjw1qARkuOAADUkEl9Dms993.JPG",
+          "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/CD/79/CgotOVw3Dc-AeIx6AATTFXoRSdM463.jpg",
+          "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/AE/7F/CgotOVv2CqKAQEVHAABMnIjj6JY251.png",
+          "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/7B/5D/CgoB5ltyOLKAMogeAAAOzanZ2Og145.jpg"
+        ]
+      },
+      {
+        "id" : "0234578",
+        "module_name" : "contactList",
+        "content" : [
+          {
+            "img" : "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B1/B9/CgoB5lv_W1OACXXzAAAWbX89NVo181.png",
+            "HRName": "李经理",
+            "company" : "链行天下",
+            "content": "[邀请投递简历]IOS开发工程师",
+            "date" : "02月28日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/CD/78/CgoB5lw3Sc-AOuXSAAA1pjdSCE0483.png",
+            "HRName": "Amy",
+            "company": "广州蕉玩科技",
+            "content": "[邀请投递简历]ios中高级开发工程师",
+            "date": "02月20日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/CD/79/CgotOVw3Dc-AeIx6AATTFXoRSdM463.jpg",
+            "HRName" : "Yang Yu",
+            "company": "大连益佳会计",
+            "content": "[邀请投递简历]移动端开发经理",
+            "date": "01月24日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B2/6F/CgoB5lwA8S-AITbfAAAhlbtSqiI867.png",
+            "HRName" : "何曾萍",
+            "company": "北京云族佳科技",
+            "content": "[邀请投递简历]iOS开发工程师",
+            "date": "01月16日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image/M00/58/05/CgpFT1mJHUaAPSZRAABC-2SikLI008.jpg",
+            "HRName" : "hr",
+            "company": "逗趣互动",
+            "content": "年后的哦",
+            "date": "01月03日"
+          },
+          {
+            "img": "https://www.lgstatic.com/i/image2/M01/72/D2/CgotOVteb36AMbI0AAAQyXgECrM976.png",
+            "HRName" : "友米乐",
+            "company": "广州友米",
+            "content": "[邀请投递简历]iOS高级开发工程师",
+            "date": "12月28日"
+          },
+          {
+            "img": "",
+            "HRName" : "李晓明",
+            "company": "音符跳动",
+            "content" : "[邀请投递简历]ios开发工程师",
+            "date" : "12月18日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B8/5E/CgotOVwSBQyAGpWdAACeTpvX72Y080.jpg",
+            "HRName" : "侯西梦",
+            "company" : "深圳嗅觉",
+            "content" : "[邀请投递简历]ios开发工程师",
+            "date" : "12月17日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/AF/8D/CgotOVv4_TmAYVHVAAAH5f0axsc598.png",
+            "HRName" : "ken",
+            "company" : "混沌科技",
+            "content" : "你好，我们公司是做海外第三支付的，持有支付牌照",
+            "date" : "12月17日"
+          },
+          {
+            "img": "https://www.lgstatic.com/i/image2/M01/A0/A2/CgotOVvRiueAcZVbAAC5WIiv3_I446.jpg",
+            "HRName" : "NewDrop.HR",
+            "company" : "卓牛科技",
+            "content" : "[邀请投递简历]iOS高级开发工程师",
+            "date" : "12月14日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/4A/86/CgotOVrtCDyARaI0AAAMIiYhthw490.png",
+            "HRName" : "gdhr",
+            "company" : "蜘点网络",
+            "content" :"[邀请投递简历]ios开发工程师",
+            "date" :"12月14日"
+          },
+          {
+            "img": "",
+            "HRName" : "林小姐",
+            "company" : "广州火羽",
+            "content" : "[邀请投递简历]iOS开发工程师",
+            "date" : "12月13日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/CD/78/CgoB5lw3Sc-AOuXSAAA1pjdSCE0483.png",
+            "HRName" : "艾米小姐姐",
+            "company" : "游豪互娱",
+            "content" : "[邀请投递简历]iOS开发工程师",
+            "date" : "12月08日"
+          },
+          {
+            "img": "",
+            "HRName" : "Kirs",
+            "company" : "手游圈内人",
+            "content": "最近还有在看机会么~",
+            "date" : "11月29日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image/M00/89/E4/CgpFT1rhR1WAJ-sXAABXuFkCgeo365.jpg",
+            "HRName" : "灵妹妹",
+            "company" : "机灵文化",
+            "content": "[邀请投递简历]iOS中级开发工程师",
+            "date" : "11月20日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/5D/3E/CgotOVswh6uAKglRAAAQiCkRq3U983.png",
+            "HRName" : "黄小姐",
+            "company" : "火速SDK",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "11月16日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/AA/37/CgotOVvqjouAUaceAABSxvD3qgQ893.png",
+            "HRName" : "悦耳律动",
+            "company" : "悦耳律动",
+            "content":  "我理解，现在也不是跳槽的最好时机",
+            "date" : "11月14日"
+          },
+          {
+            "img": "",
+            "HRName" : "姚小姐",
+            "company" : "LD",
+            "content":  "项目地点在济南市中区，薪资可谈，您这边考虑吗?",
+            "date" : "11月13日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/B7/FB/CgotOVwQ6ZaAahV9AAEdIgCPnoo375.JPG",
+            "HRName" : "HR总监",
+            "company" : "飞跑科技",
+            "content":  "[邀请投递简历]高级iOS开发工程师",
+            "date" : "11月07日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image3/M00/42/72/Cgq2xlq18cCActyxAAAsTXVJyFE981.png",
+            "HRName" : "杨先生",
+            "company" : "卡盟科技",
+            "content":  "我的微信是18825267543，你可以加我微信，微信会经常在线",
+            "date" : "11月06日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/CF/06/CgoB5lw74BOAQZfzAABfkpeb06k280.jpg",
+            "HRName" : "幻动网络.HR",
+            "company" : "幻动网络",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "11月06日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/83/22/CgotOVuE8suAEGx1AA57ikFRqr0109.jpg",
+            "HRName" : "张先生",
+            "company" : "木娱科技",
+            "content":  "你好，在考虑新的工作机会吗？希望能和你进一步沟通。",
+            "date" : "10月30日"
+          },
+          {
+            "img": "",
+            "HRName" : "hr",
+            "company" : "广州市好料信息科技有限公司",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "10月18日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/54/BA/CgoB5lsZ62qAFWfrAAEonJtUfO4102.png",
+            "HRName" : "微咔世纪",
+            "company" : "微咔世纪",
+            "content":  "你好，方便发份简历过来吗",
+            "date" : "10月09日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/73/29/CgotOVtewi2AFoLQAABiW5UA0TM825.png",
+            "HRName" : "致景HR",
+            "company" : "百布",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "10月08日"
+          },
+          {
+            "img": "",
+            "HRName" : "HR",
+            "company" : "佰锐科技",
+            "content":  "你好，看了你的简历，觉得你和我们公司的岗位符合",
+            "date" : "09月29日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image3/M00/4F/78/Cgq2xlrycRKAPZTTAAC0pf2-zuk51.jpeg",
+            "HRName" : "张小姐",
+            "company" : "乐源数字",
+            "content":  "[邀请投递简历]高级iOS工程师",
+            "date" : "09月17日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/D8/00/CgoB5lxiNKCADiMbAAA228hC7mo079.png",
+            "HRName" : "朱小姐",
+            "company" : "广州市尚捷网络科技有限公司",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "09月13日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/53/94/CgoB5lsXh96AQEoWAACmKB_l1xU723.png",
+            "HRName" : "廖洪裕",
+            "company" : "腾宇科技",
+            "content":  "[邀请投递简历]ios开发工程师",
+            "date" : "09月11日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/91/82/CgoB5lul6aOAOtecAAGFOzSe63I417.png",
+            "HRName" : "Justin",
+            "company" : "易经信息",
+            "content":  "你好，在考虑新的工作机会吗？希望可以和你进一步沟通",
+            "date" : "08月27日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image3/M00/15/1E/CgpOIFpxitCAR0DwAAAGI3-lMpw493.png",
+            "HRName" : "hr",
+            "company" : "米研网络",
+            "content":  "你好，在考虑新的工作机会吗？希望可以和你进一步沟通",
+            "date" : "08月25日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/59/16/CgoB5lsjeAiAISVqAAD-KMIslHc807.png",
+            "HRName" : "陈小姐",
+            "company" : "麦根网络",
+            "content":  "[邀请投递简历]ios开发工程师",
+            "date" : "08月22日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/7B/5D/CgoB5ltyOLKAMogeAAAOzanZ2Og145.jpg",
+            "HRName" : "hr",
+            "company" : "荔枝",
+            "content":  "是，目前在职状态",
+            "date" : "08月21日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/81/1C/CgoB5lt_W7yAdVHFAAG_fv4E10M164.png",
+            "HRName" : "谢先生",
+            "company" : "广东锐泽咨询服务有限公司",
+            "content":  "[邀请投递简历]IOS工程师",
+            "date" : "08月21日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/59/50/CgoB5lskiA2AHPBlAAGBCEp_eJo762.jpg",
+            "HRName" : "骆燕红",
+            "company" : "掏淘市网络",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "08月17日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/A3/E8/CgotOVvaTciAOUUIAAEYFBYIMIU665.jpg",
+            "HRName" : "樊映兰",
+            "company" : "广东立升科技有限公司",
+            "content":  "我的电话",
+            "date" : "08月16日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/82/FA/CgotOVuEw4iARKVFAAFOlLP8mPk154.png",
+            "HRName" : "查先生",
+            "company" : "游宝科技",
+            "content":  "[邀请投递简历]iOS中级开发工程师",
+            "date" : "08月14日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/AE/7F/CgotOVv2CqKAQEVHAABMnIjj6JY251.png",
+            "HRName" : "速微网络",
+            "company" : "速微网络",
+            "content":  "有时间我看一下你们公司",
+            "date" : "08月04日"
+          },
+          {
+            "img": "https://www.lgstatic.com/i/image2/M01/D4/62/CgoB5lxJCteAaedqAAAlvQMwsTA903.png",
+            "HRName" : "李女士",
+            "company" : "聚蜂智能",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "07月31日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/54/09/CgoB5lsYk6qAcEUqAAC1jyNKEq0830.png",
+            "HRName" : "飞威前台",
+            "company" : "飞威集团",
+            "content":  "你好，我觉得你挺适合我们公司的，你方便过来面试吗？",
+            "date" : "07月27日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/8D/9E/CgoB5lubf_qAXekdAC03KRzFUZs296.png",
+            "HRName" : "",
+            "company" : "广州幂动科技有限公司",
+            "content":  "[邀请投递简历]iOS高级开发工程师",
+            "date" : "07月24日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/82/9A/CgotOVuDynSAE1m5AAGaHoEWUAs682.jpg",
+            "HRName" : "何小姐",
+            "company" : "无界互动",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "07月21日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image3/M00/52/81/CgpOIFsH0QqARmFQAAUSynyhScc694.jpg",
+            "HRName" : "周培乐",
+            "company" : "作文纸条",
+            "content":  "是教育类的吧，主要面向初高中生群体吗?",
+            "date" : "07月21日"
+          },
+          {
+            "img": "",
+            "HRName" : "1000",
+            "company" : "东莞市金博网络科技有限公司",
+            "content":  "[邀请投递简历]ios开发工程师",
+            "date" : "07月21日"
+          },
+          {
+            "img": "",
+            "HRName" : "aooushi",
+            "company" : "傲鸥信息",
+            "content":  "[邀请投递简历]ios开发工程师",
+            "date" : "07月17日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M01/A2/CE/CgoB5lvYANCAQ-LCAABwY8Kagtw798.png",
+            "HRName" : "贺锦华",
+            "company" : "广州多融信息科技有限公司",
+            "content":  "[邀请投递简历]iOS高级开发工程师",
+            "date" : "07月16日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/48/54/CgotOVreqpyAJI3jAAQmTmKga68457.png",
+            "HRName" : "陈女士",
+            "company" : "珠海乐乐文化传播有限公司",
+            "content":  "[邀请投递简历]iOS开发工程师",
+            "date" : "07月16日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/47/6E/CgoB5lrZUyiAUvPuAAD1wGKzY34786.jpg",
+            "HRName" : "Yuki",
+            "company" : "英思奇",
+            "content":  "好吧😶",
+            "date" : "06月18日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image2/M00/4D/C3/CgoB5lr_xhyAV4fcAABukWeWd1o729.png",
+            "HRName" : "龙珍珍",
+            "company" : "雨音科技",
+            "content":  "啥公司",
+            "date" : "06月14日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image3/M00/22/9B/Cgq2xlqU9gOARzwFAAM__3h0GJk607.png",
+            "HRName" : "Ken",
+            "company" : "云易恒基",
+            "content":  "暂时没有，",
+            "date" : "04月14日"
+          },
+          {
+            "img": "https://www.lgstatic.com/thumbnail_360x360/i/image/M00/55/88/CgpEMll7C9yAbfPIAAEJr864moo788.jpg",
+            "HRName" : "马小姐",
+            "company" : "Symbio-Free",
+            "content":  "暂时不考虑",
+            "date" : "08月25日"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -21,12 +21,20 @@ dependencies:
   cupertino_icons: ^0.1.2
   carousel_slider: ^1.0.1
   dio: ^1.0.13
-  
+  common_utils: ^1.1.1
+  flutter_launcher_icons: ^0.7.0
+  keyboard_visibility: ^0.5.2
+  image_picker: ^0.5.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
+# 自动生成Appicon
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/icon/icon.png"
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
@@ -45,6 +53,10 @@ flutter:
    - images/mine/
    - images/speech/
    - images/home/
+   - images/company/
+   - images/message/
+   - images/newfeature/
+   - images/welcome/
    - mock/
   #  - images/a_dot_ham.jpeg
 

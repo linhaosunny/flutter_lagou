@@ -1,0 +1,94 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id": "3426",
+        "m_s_name": "topbanner",
+        "content": [
+          {
+            "link_text": "数据越过界,不止搞事情",
+            "link_url": "https:\/\/activity.lagou.com\/topic\/bigdata.html?appType=C&lagoufrom=ios&appVersion=7.7.0&randomize=1546175830",
+            "image_url": "https:\/\/www.lgstatic.com\/i\/image2\/M01\/D7\/2D\/CgotOVxf9FWAWpC_AAZP5jxsnhE510.JPG",
+            "type": "word",
+            "reason": "#2b2726"
+          },
+          {
+            "link_text": "热招职场",
+            "link_url": "https:\/\/activity.lagou.com\/topic\/0218GZrz.html?appType=C&lagoufrom=ios&appVersion=7.7.0&randomize=1493867096",
+            "image_url": "https:\/\/www.lgstatic.com\/i\/image2\/M01\/DB\/75\/CgoB5lxmi2yAFdSrAANS_4oD0QQ876.JPG",
+            "type": "word",
+            "reason": "#eabf8c"
+          }
+        ]
+      },
+      {
+        "id": "3427",
+        "m_s_name": "newsbanner",
+        "content":[
+          {
+            "keyword": "前线",
+            "title": "“头腾”海外大战在即！腾讯1.5亿美元投资社交平台Reddit",
+            "url": ""
+          },
+          {
+            "keyword": "行业",
+            "title": "高德地图推出国内首个摩托车导航 全国39城率先体验",
+            "url": ""
+          },
+          {
+            "keyword": "融资",
+            "title": "网易云音乐完成新一轮融资，总金额超6亿美元",
+            "url": ""
+          },
+          {
+            "keyword": "前线",
+            "title": "加速布局ACG生态 B站宣布收购网易漫画资产",
+            "url": ""
+          },
+          {
+            "keyword": "融资",
+            "title": "快手正进行10亿美元融资，估计达250亿美元",
+            "url": ""
+          },
+          {
+            "keyword": "前线",
+            "title": "阿里宣布饿了麽口碑合并 成立本地生活服务公司",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "id": "3428",
+        "m_s_name": "middletabbar",
+        "content": [
+          {
+            "link": "lagou://lagou.com/positionlist/hot",
+            "pic": "https://www.lgstatic.com/i/image3/M00/50/C9/Cgq2xlr6fmSAIWibAAAhJuBSeUc879.png"
+          }, {
+            "link": "lagou://lagou.com/positionlist/feedback",
+            "pic": "https://www.lgstatic.com/i/image2/M00/4C/D6/CgoB5lr6gDqAWsNOAAAmzM_S9BQ643.png"
+          }, {
+            "link": "lagou://lagou.com/positionlist/salary",
+            "pic": "https://www.lgstatic.com/i/image2/M00/4C/D6/CgoB5lr6gFGAAbTZAAAidj4dY0E794.png"
+          }
+        ]
+      },
+      {
+        "id": "3429",
+        "m_s_name": "bottomtopic",
+        "content": [
+          {
+            "left_pic" : "https://www.lgstatic.com/i/image2/M01/5C/01/CgoB5lsrhp6AeUS0AAJAzbPG8EA518.png",
+            "left_link": "https://faxian.lagou.com/discover/e8efd12893fc4d73a542ddbd8ad55d44.html?ver=1546398154122",
+            "righttop_pic": "https://www.lgstatic.com/i/image2/M01/BF/84/CgoB5lwsOHOACWLgAACpLF5NaLk189.png",
+            "righttop_link": "https://faxian.lagou.com/discover/35b0463cf29a47e088cd4f7d92106f30.html?ver=0",
+            "rightbottom_pic": "https://www.lgstatic.com/i/image2/M01/71/69/CgotOVtZeV6AQwYxAAE-nEnR1ZQ930.png",
+            "rightbottom_link": "https://faxian.lagou.com/discover/f2f913cc86e5488ea48c5b753b0ee9b7.html?ver=1532333222262"
+          }
+        ]
+      }
+    ]
+  }
+}

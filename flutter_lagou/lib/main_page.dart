@@ -3,6 +3,8 @@ import 'package:flutter_lagou/tabbar_type.dart';
 import 'package:flutter_lagou/widgets/home_page.dart';
 import 'package:flutter_lagou/widgets/mine_page.dart';
 import 'package:flutter_lagou/widgets/speech_page.dart';
+import 'package:flutter_lagou/widgets/company_page.dart';
+import 'package:flutter_lagou/widgets/message_page.dart';
 
 
 
@@ -17,6 +19,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   TabbarType _lastSelection = TabbarType.home;
+  bool isBottomTabbarShow = true;
+
   
   // 匹配tabbar颜色
   Color _tabbarColorMatching({TabbarType type}) {
@@ -89,9 +93,13 @@ class _MyHomePageState extends State<MyHomePage> {
       case TabbarType.home:
         return HomePage();
       case TabbarType.company:
-        return HomePage();
+        return CompanyPage(isShowBottomTabbar: (isShow) {
+          setState(() {
+            isBottomTabbarShow = isShow;
+          });
+        },);
       case TabbarType.message:
-        return HomePage();
+        return MessagePage();
       case TabbarType.find:
         return SpeechPage();
       case TabbarType.mine:
@@ -103,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
        return Scaffold(
       body: _buildBody(),
-      bottomNavigationBar: _buildBottomNavBar(), // This trailing comma makes auto-formatting nicer for build methods.
+      bottomNavigationBar: isBottomTabbarShow ? _buildBottomNavBar() : null, // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

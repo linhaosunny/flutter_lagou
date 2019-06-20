@@ -1,0 +1,76 @@
+{
+  "state": "200",
+  "message": "success",
+  "data": {
+    "module": [
+      {
+        "id": "3476",
+        "module_name": "columnlist",
+        "content": [
+          {
+              "id": "00001",
+              "keyword": "什么值得投资",
+              "title": "地铁众生相，每个人都有自己的故事",
+              "link_url": "https://faxian.lagou.com/discover/069d0070f31d4678ba3e011ddfd889a6.html?appType=C&lagoufrom=noapp&appVersion=7.8.0&randomize=1608522297&ver=3",
+              "image": "https://www.lgstatic.com/i/image2/M01/94/59/CgotOVuvJ4WATJglAARJ6JwF0AM710.jpg"
+          },
+          {
+            "id": "00002",
+            "keyword": "职业观察科",
+            "title": "9位月薪50000的职场人，告诉你如何工资爆发式增长",
+            "link_url": "https://faxian.lagou.com/discover/2f65a96ff2ce47b485b693ebb6536f02.html?ver=1&lagoufrom=noapp",
+            "image": "https://www.lgstatic.com/i/image2/M01/8D/AF/CgotOVubsxeAJyy2AAD0DmCn2cQ367.jpg"
+          },
+          {
+            "id": "00003",
+            "keyword": "什么值得投",
+            "title": "《延禧攻略》里暗藏的职场秘籍，比剧情更加吸引人！",
+            "link_url": "https://faxian.lagou.com/discover/40090adee21c4d659b5cd927189c0ba3.html?ver=1&lagoufrom=noapp",
+            "image": "https://www.lgstatic.com/i/image2/M01/77/D0/CgotOVtpWqGAUomgAAFz6-bMFV8717.jpg"
+          },
+          {
+            "id": "00004",
+            "keyword": "什么值得投",
+            "title": "应届求职抢先一步，2018秋招大战正式打响！",
+            "link_url": "https://faxian.lagou.com/discover/d6597003965f41a792744f3c452c7ca9.html?appType=C&lagoufrom=noapp&appVersion=7.8.0&randomize=839429596&ver=1",
+            "image": "https://www.lgstatic.com/i/image2/M01/79/8D/CgoB5lttAx-AWPv9AANDG_xrgnU537.jpg"
+          },
+          {
+            "id": "00005",
+            "keyword": "职业观察科",
+            "title": "职场干货：我能做与我想做，究竟有什么区别？",
+            "link_url": "https://faxian.lagou.com/discover/f4f171243f4241ff9fb6e4a0b907318c.html?ver=1&lagoufrom=noapp",
+            "image": "https://www.lgstatic.com/i/image2/M01/74/7C/CgotOVthUNyAatNvAAG0xeuzQ-g32.jpeg"
+          },
+          {
+            "id": "00006",
+            "keyword": "职业观察科",
+            "title": "应届毕业生该如何规划你的职场第一步？",
+            "link_url": "https://faxian.lagou.com/discover/ba84d97afe87476983850163a3b790a9.html?ver=1&lagoufrom=noapp",
+            "image": "https://www.lgstatic.com/i/image/M00/73/AC/CgpEMlozdCqAO89EAAG-3HpbeYs824.jpg"
+          },
+          {
+            "id": "00007",
+            "keyword": "职业观察科",
+            "title": "怎样才能告别充满「 重复任务 」的工作，进入职业发展的新阶段？",
+            "link_url": "https://faxian.lagou.com/discover/c5988ca75aee433691a651dd89566e3c.html?appType=C&lagoufrom=noapp&appVersion=7.8.0&randomize=415486224&ver=4",
+            "image": "https://www.lgstatic.com/i/image/M00/70/B8/CgpFT1o4uIeAYOiRAAL6a2M5bTo429.jpg"
+          },
+          {
+            "id": "00008",
+            "keyword": "职业观察科",
+            "title": "腾讯校招面试官分享，最全的产品，运营岗面试 Tips",
+            "link_url": "https://faxian.lagou.com/discover/39f8676b634a4a9b83caf12a740b2150.html?ver=4&lagoufrom=noapp",
+            "image": "https://www.lgstatic.com/i/image2/M00/2A/71/CgotOVoo-aOAHlU6AAEzD3OE8N4423.jpg"
+          },
+          {
+            "id": "00009",
+            "keyword": "职业观察科",
+            "title": "应届生如何回答面试中的刁钻问题？",
+            "link_url": "https://faxian.lagou.com/discover/07bd47889494491ab2869e034b127e68.html?appType=C&lagoufrom=noapp&appVersion=7.8.0&randomize=1233494211&ver=3",
+            "image": "https://www.lgstatic.com/i/image2/M00/23/B5/CgotOVoXvaiAPZooAATUGXeGzpg145.png"
+          }
+        ]
+      }
+  ]}
+}

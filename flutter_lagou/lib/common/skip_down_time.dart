@@ -65,6 +65,7 @@ class SkipdownTime extends StatefulWidget {
   final Color color;
   final double radius;
   final Duration duration;
+  final bool isHidden;
   final Size size;
   String skipText;
   OnSkipClickLister clickLister;
@@ -78,6 +79,7 @@ class SkipdownTime extends StatefulWidget {
       Key key,
       String this.skipText = '跳过',
       OnSkipClickLister this.clickLister,
+      this.isHidden = false,
     }) : super(key: key);
 
   @override
@@ -138,9 +140,9 @@ class __SkipdownTimeState extends State<SkipdownTime> with TickerProviderStateMi
 
   @override
   Widget build(BuildContext context) {
-    return new GestureDetector(
+    return widget.isHidden ? new Container() : new GestureDetector(
       onTap: _onSkipClick,
-      child: new Stack(
+      child:  new Stack(
         alignment: Alignment.center,
         children: <Widget>[
           new CustomPaint(
