@@ -22,3 +22,9 @@
 聊天- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_ios_001.png" width="212" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_ios_002.png" width="212" height="417" alt="图片0-1" />   
 聊天 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_android_001.png" width="240" height="417" alt="图片0-1" /> <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_msgchat_android_002.png" width="240" height="417" alt="图片0-1" />
 ****
+- 言职  
+开悟- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yankaiwu_ios_001.png" width="212" height="417" alt="图片0-1" /> 开悟 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yankaiwu_android_001.png" width="240" height="417" alt="图片0-1" />  
+精选- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yanjinxuan_ios_001.png" width="212" height="417" alt="图片0-1" /> 精选 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yanjinxuan_android_001.png" width="240" height="417" alt="图片0-1" />  
+话题- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yanhuati_ios_001.png" width="212" height="417" alt="图片0-1" /> 话题 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yanhuati_android_001.png" width="240" height="417" alt="图片0-1" /> 
+专栏- IOS <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yanzhuanlan_ios_001.png" width="212" height="417" alt="图片0-1" /> 专栏 - Android <img src="https://github.com/linhaosunny/flutter_lagou/blob/master/tu/lagou_yanzhuanlan_android_001.png" width="240" height="417" alt="图片0-1" /> 
+****
