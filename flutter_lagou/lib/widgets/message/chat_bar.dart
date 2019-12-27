@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lagou/widgets/message/models/chatbar_model.dart';
-import 'package:flutter_lagou/widgets/message/visiblefocused_widget.dart';
-import 'package:flutter_lagou/widgets/custom_textfield/custom_textfield.dart';
-import 'package:flutter_lagou/widgets/custom_textfield/custom_editabletext.dart';
+import 'package:flutter_lagou/widgets/message/visiblefocused_widget.dart' show VisibleFocusedWidget;
 
 class ChatBar extends StatefulWidget {
   final Function(ChatBarItemType) onChatBarItemClick;
@@ -24,17 +22,18 @@ class _ChatBarState extends State<ChatBar> {
     ChatBarModel(icon: 'images/message/icon_chat_emoji_25x25_@3x.png',type: ChatBarItemType.emoji),
     ChatBarModel(icon: 'images/message/icon_chat_quickreply_25x25_@3x.png',type: ChatBarItemType.post),
   ];
+ 
+  TextEditingController controller = TextEditingController();
 
-  CustomTextEditingController controll = CustomTextEditingController(); 
   FocusNode focusNode = FocusNode();
   double _firstHeight = 0.0;
   double _lastHeight = 0.0;
 
   Widget _buildTextField() {
-    return new CustomTextField(
+    return TextField(
       textInputAction: TextInputAction.send,
       focusNode: focusNode,
-      controller: controll,
+      controller: controller,
       cursorColor: widget.themeColor,
       cursorWidth: 1.5,
       maxLines: 4,
@@ -64,26 +63,9 @@ class _ChatBarState extends State<ChatBar> {
         if (widget.onCompletedTextInput != null && text != '') {
           widget.onCompletedTextInput(text);
         }
-        controll.clear();
-        controll.clearComposing();
-      },
-      onContentRectChanged: (rect) {
-        double height = rect.bottom;
-        if (_firstHeight == 0) {
-          _firstHeight = height;
-        }
-        
-        if (_lastHeight != (height - _firstHeight)) {
-          _lastHeight = (height - _firstHeight);
-          if (_firstHeight != height && _lastHeight > 0) {
-            widget.onTextFieldMuiltLineHeightChanged(_lastHeight);
-          } else {
-            widget.onTextFieldMuiltLineHeightChanged(0);
-          }
-        }
-        
-
-      },
+        controller.clear();
+        controller.clearComposing();
+      }
     );
   }
 
@@ -146,7 +128,7 @@ class _ChatBarState extends State<ChatBar> {
 
   @override
   void dispose() {
-    controll.dispose();
+    controller.dispose();
     super.dispose();
   }
 
