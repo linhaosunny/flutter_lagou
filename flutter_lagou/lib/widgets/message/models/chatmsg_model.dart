@@ -4,7 +4,7 @@ import 'package:flutter_lagou/widgets/model/base_model.dart';
 
 class ChatMsgModel {
   List<MsgContentModel> messages = [];
-  String companyName;
+  late String companyName;
 
   ChatMsgModel():super();
 

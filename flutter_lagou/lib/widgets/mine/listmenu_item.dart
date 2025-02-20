@@ -9,7 +9,7 @@ class ListMenuItem extends StatefulWidget {
   final String subTitle;
   final VoidCallback onPressed;
 
-  ListMenuItem(this.icon,this.title,this.iconNews,this.subTitle,this.newsVisible,{Key key,this.onPressed}) : super(key: key);
+  ListMenuItem(this.icon,this.title,this.iconNews,this.subTitle,this.newsVisible,{Key? key,required this.onPressed}) : super(key: key);
 
   @override
   _ListMenuItemState createState() => _ListMenuItemState();

@@ -3,7 +3,7 @@ import 'package:flutter_lagou/widgets/company/company_public.dart';
 
 class CompanyPage extends StatefulWidget {
   final ValueChanged<bool> isShowBottomTabbar;
-  CompanyPage({Key key,this.isShowBottomTabbar}):super(key:key);
+  CompanyPage({Key? key,required this.isShowBottomTabbar}):super(key:key);
 
   @override
   _CompanyPageState createState() => _CompanyPageState();

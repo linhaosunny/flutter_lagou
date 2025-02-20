@@ -1,9 +1,9 @@
 class ChatModel {
-  String image;
-  String hrName;
-  String companyName;
-  String lastSay;
-  String dateString;
+  late String image;
+  late String hrName;
+  late String companyName;
+  late String lastSay;
+  late String dateString;
 
   ChatModel.fromJson(Map data) {
     image = data["img"];

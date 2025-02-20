@@ -5,7 +5,7 @@ import 'package:flutter_lagou/public.dart';
 class BillboardItem extends StatelessWidget {
   final CompanyBillboardModel model;
 
-  BillboardItem({Key key,this.model}) : super(key:key);
+  BillboardItem({Key? key,required this.model}) : super(key:key);
 
   Widget _buildTopBar() {
     return new Container(
@@ -22,7 +22,7 @@ class BillboardItem extends StatelessWidget {
               children: <Widget>[
                 new Container(
                   width: Screen.width - 45 - 30,
-                  child: new Text(model.title ?? '',style:new TextStyle(fontSize:20.0,color:Colors.black,fontWeight: FontWeight.w500),softWrap: false,overflow: TextOverflow.ellipsis,maxLines: 1,),
+                  child: new Text(model.title ,style:new TextStyle(fontSize:20.0,color:Colors.black,fontWeight: FontWeight.w500),softWrap: false,overflow: TextOverflow.ellipsis,maxLines: 1,),
                 ),
                 new Text("更多",style: new TextStyle(fontSize: 14.0,color: new Color.fromARGB(255, 15, 185, 125)),)
               ],

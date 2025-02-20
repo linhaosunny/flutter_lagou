@@ -7,9 +7,9 @@ class ToplineBanner extends StatelessWidget {
   final double height;
   final double width; 
   
-  ToplineBanner({Key key,this.newsModels,this.height,this.width}):super(key:key);
+  ToplineBanner({Key? key,required this.newsModels,required this.height,required this.width}):super(key:key);
 
-  Widget _buildToplineItem({String keyword,String title}) {
+  Widget _buildToplineItem({required String keyword,required String title}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
@@ -40,7 +40,7 @@ class ToplineBanner extends StatelessWidget {
     );
   }
 
-  Widget _buildToplineContent({NewsBannerModel model}) {
+  Widget _buildToplineContent({required NewsBannerModel model}) {
     return new Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[

@@ -8,14 +8,14 @@ class HomeJobList extends StatefulWidget {
 
 
 
-  HomeJobList({Key key,this.contentScrollable,this.tabbarItemClick}) : super(key:key);
+  HomeJobList({Key? key,required this.contentScrollable,required this.tabbarItemClick}) : super(key:key);
 
   @override
   _HomeJobListState createState() => _HomeJobListState();
 }
 
 class _HomeJobListState extends State<HomeJobList> with SingleTickerProviderStateMixin {
-  TabController _tabController;
+  late TabController _tabController;
   final List<Tab> _tabMenus = <Tab> [
     new Tab(text: '推荐'),
     new Tab(text: '最新'),

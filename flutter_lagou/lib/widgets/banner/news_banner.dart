@@ -12,14 +12,14 @@ class NewsBanner extends StatefulWidget {
   final List<Widget> content;
   int _page = 0;
 
-  NewsBanner({Key key,@required this.content,this.width = 240,this.height = 60,this.delayTime = 3,this.scrollTime = 500,this.autoPlay = false}):super(key:key);
+  NewsBanner({Key? key,required this.content,this.width = 240,this.height = 60,this.delayTime = 3,this.scrollTime = 500,this.autoPlay = false}):super(key:key);
   @override
   _NewsBannerState createState() => _NewsBannerState();
 }
 
 class _NewsBannerState extends State<NewsBanner> {
   PageController controller = new PageController();
-  Timer timer;
+  Timer? timer;
 
  void resetTimer() {
     if (widget.autoPlay) {
@@ -27,7 +27,7 @@ class _NewsBannerState extends State<NewsBanner> {
       timer = new Timer.periodic(new Duration(seconds: widget.delayTime), (Timer timer) {
         
         if (controller.positions.isNotEmpty) {
-          widget._page = controller.page.round() + 1;
+          widget._page = (controller.page?.round() ?? 0) + 1;
           controller.animateToPage(widget._page,duration: new Duration(milliseconds: widget.scrollTime),curve: Curves.linear);
           setState(() {
             
@@ -39,7 +39,7 @@ class _NewsBannerState extends State<NewsBanner> {
 
   void clearTimer() {
     if (timer != null) {
-      timer.cancel();
+      timer!.cancel();
       timer = null;
     }
   }

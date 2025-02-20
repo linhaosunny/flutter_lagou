@@ -5,12 +5,12 @@ import 'package:flutter/rendering.dart';
 import 'package:meta/meta.dart';
 
 class VisibleFocusedWidget extends StatefulWidget {
-  const VisibleFocusedWidget({Key key,
-    @required this.focusNode,
-    @required this.child,
-    this.curve: Curves.fastOutSlowIn,
-    this.onVisibleFocusechanged,
-    this.duration: const Duration(milliseconds: 250)
+  const VisibleFocusedWidget({Key? key,
+    required this.focusNode,
+    required this.child,
+    this.curve = Curves.fastOutSlowIn,
+    required this.onVisibleFocusechanged,
+    this.duration = const Duration(milliseconds: 250)
   }) : super(key:key);
 
   final FocusNode focusNode;
@@ -39,7 +39,11 @@ class _VisibleFocusedWidgetState extends State<VisibleFocusedWidget> with Widget
 
    
 
-    final RenderObject object = context.findRenderObject();
+    final RenderObject? object = context.findRenderObject();
+    if (object == null) {
+      return;
+    }
+    
     final RenderAbstractViewport viewport = RenderAbstractViewport.of(object);
     assert(viewport != null);
 
@@ -85,7 +89,11 @@ class _VisibleFocusedWidgetState extends State<VisibleFocusedWidget> with Widget
 
    
 
-    final RenderObject object = context.findRenderObject();
+    final RenderObject? object = context.findRenderObject();
+    if (object == null) {
+      return;
+    }
+
     final RenderAbstractViewport viewport = RenderAbstractViewport.of(object);
     assert(viewport != null);
 

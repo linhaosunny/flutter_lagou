@@ -5,7 +5,7 @@ class AnimationArray extends StatefulWidget {
   final Widget container;
   final bool isReverse;
   final bool isForward;
-  AnimationArray({Key key,this.container,this.isReverse =false ,this.isForward =false}) : super(key:key);
+  AnimationArray({Key? key,required this.container,this.isReverse =false ,this.isForward =false}) : super(key:key);
 
 
   @override
@@ -13,8 +13,8 @@ class AnimationArray extends StatefulWidget {
 }
 
 class _AnimationArrayState extends State<AnimationArray> with TickerProviderStateMixin {
-  Animation<double> animation;
-  AnimationController controller;
+  late Animation<double> animation;
+  late AnimationController controller;
 
   @override
   void initState() {

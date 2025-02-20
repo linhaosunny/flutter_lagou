@@ -5,7 +5,7 @@ class CollectionButton extends StatefulWidget {
   final String title;
   final Function(bool) onValueChanged;
 
-  CollectionButton({Key key,this.themeColor = Colors.black,@required this.title,this.onValueChanged}):super(key:key);
+  CollectionButton({Key? key,this.themeColor = Colors.black,required this.title,required this.onValueChanged}):super(key:key);
   @override
   _CollectionButtonState createState() => _CollectionButtonState();
 }

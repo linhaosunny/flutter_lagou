@@ -6,7 +6,7 @@ class NavBar extends StatefulWidget {
   final String rightIcon;
   final VoidCallback onPressedLeftItem;
 
-  NavBar(this.leftIcon,this.titleIcon,this.rightIcon,{Key key,this.onPressedLeftItem}): super(key: key);
+  NavBar(this.leftIcon,this.titleIcon,this.rightIcon,{Key? key,required this.onPressedLeftItem}): super(key: key);
 
   @override
   _NavBarState createState() => _NavBarState();

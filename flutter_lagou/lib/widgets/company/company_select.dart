@@ -7,7 +7,7 @@ class CompanySelect extends StatefulWidget {
   final Color themeColor;
   final Function onSureButtonClick;
 
-  CompanySelect({Key key,this.height,this.themeColor,this.onSureButtonClick}) :super(key:key);
+  CompanySelect({Key? key,required this.height,required this.themeColor,required this.onSureButtonClick}) :super(key:key);
   @override
   _CompanySelectState createState() => _CompanySelectState();
 }
@@ -189,15 +189,17 @@ class _CompanySelectState extends State<CompanySelect> {
                   new Container(
                     height: kToolbarHeight,
                     width: Screen.width,
-                    child: FlatButton(
-                      color: widget.themeColor,
+                    child: TextButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(widget.themeColor),
+                        foregroundColor: MaterialStateProperty.all(Colors.white),
+                      ),
                       onPressed: () {
                         if (widget.onSureButtonClick != null) {
                           widget.onSureButtonClick();
                         }
                       },
-                      textColor: Colors.white,
-                      child: new Text("确定",style: TextStyle(fontSize: 18.0),),
+                      child: Text("确定", style: TextStyle(fontSize: 18.0)),
                     ),
                   )
                 ],

@@ -5,7 +5,7 @@ import 'package:flutter_lagou/widgets/home/home_public.dart';
 class HomeListItem extends StatelessWidget {
   final HomeJobsModel jobsModel;
 
-  HomeListItem({Key key,this.jobsModel}):super(key:key);
+  HomeListItem({Key? key,required this.jobsModel}):super(key:key);
 
   Widget _buildJobsCell(bool showlabels) {
     return new Column(
@@ -46,7 +46,7 @@ class HomeListItem extends StatelessWidget {
               margin: EdgeInsets.only(top: showlabels ? 5.0 : 0.0),
               child: new Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: jobsModel.job_label != null ? jobsModel.job_label.map((label) {
+                children: jobsModel.job_label.map((label) {
                   return new Container(
                     margin: EdgeInsets.only(left: 5.0,right: 5.0),
                     padding: EdgeInsets.only(left: 5.0,right: 5.0,top: 2.0,bottom: 2.0),
@@ -56,7 +56,7 @@ class HomeListItem extends StatelessWidget {
                     ),
                     child: new Text(label,style: new TextStyle(fontSize: 11.0,color: Colors.black45),),
                   );
-                }).toList() : null),
+                }).toList()),
             ),
             new Container(
               margin: new EdgeInsets.only(top: 10.0),

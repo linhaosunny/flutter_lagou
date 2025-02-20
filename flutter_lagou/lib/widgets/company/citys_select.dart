@@ -8,7 +8,7 @@ class CitysSelect extends StatefulWidget {
   final String locationIcon;
   final ValueChanged<String> onValueChanged;
 
-  CitysSelect({Key key,this.height,this.locationIcon = '', this.themeColor = Colors.grey,this.onValueChanged}): super(key:key);
+  CitysSelect({Key? key,required this.height,this.locationIcon = '', this.themeColor = Colors.grey,required this.onValueChanged}): super(key:key);
 
   @override
   _CitysSelectState createState() => _CitysSelectState();
@@ -19,7 +19,7 @@ class _CitysSelectState extends State<CitysSelect> {
  int currentSelect = 0;
  bool isTap = false;
  bool isHotCitys = false;
- String selectCityName; 
+ late String selectCityName; 
 
 
  Future<void> fetchData() async {

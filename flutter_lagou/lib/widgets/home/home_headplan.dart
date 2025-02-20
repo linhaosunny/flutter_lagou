@@ -12,7 +12,7 @@ class HomeHeadPlan extends StatelessWidget {
   final double bannerHeight;
   
 
-  HomeHeadPlan({Key key,this.bannerDatas,this.newsDatas,this.bannerHeight,this.topicTabMenus,this.topicBottomDatas,this.height}):super(key:key);
+  HomeHeadPlan({Key? key,required this.bannerDatas,required this.newsDatas,required this.bannerHeight,required this.topicTabMenus,required this.topicBottomDatas,required this.height}):super(key:key);
 
   Widget _buildTopLine() {
     return new Row(

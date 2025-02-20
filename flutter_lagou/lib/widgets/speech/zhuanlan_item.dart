@@ -5,7 +5,7 @@ import 'package:flutter_lagou/public.dart';
 class ZhuanlanItem extends StatelessWidget {
   final ZhunlanCellModel model;
 
-  ZhuanlanItem({Key key,this.model}) :super(key:key);
+  ZhuanlanItem({Key? key,required this.model}) :super(key:key);
   @override
   Widget build(BuildContext context) {
     return Container(

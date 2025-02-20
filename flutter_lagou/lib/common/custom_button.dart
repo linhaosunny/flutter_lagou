@@ -10,7 +10,7 @@ class CustomButton extends StatefulWidget {
   final double height;
   final double borderRadius;
 
-  CustomButton({Key key,this.backgroudImage,this.backgroudColor = Colors.transparent,this.borderRadius = 0.0,this.title,this.titleStyle, this.width,this.height,this.onButtonClick}):super(key:key);
+  CustomButton({Key? key,required this.backgroudImage,this.backgroudColor = Colors.transparent,this.borderRadius = 0.0,required this.title,required this.titleStyle,required this.width,required this.height,required this.onButtonClick}):super(key:key);
   @override
   _CustomButtonState createState() => _CustomButtonState();
 }

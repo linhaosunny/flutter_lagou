@@ -1,12 +1,12 @@
 class KaiWuCourseModel {
-  String title;
-  String sub_title;
+  late String title;
+  late String sub_title;
   int  original_price = 0;
   int price = 0;
-  String image;
-  String presenter_name;
-  String presenter_title;
-  String h5_link;
+  late String image;
+  late String presenter_name;
+  late String presenter_title;
+  late String h5_link;
   int  totalChapter = 0;
 
   KaiWuCourseModel.fromJson(Map data) {

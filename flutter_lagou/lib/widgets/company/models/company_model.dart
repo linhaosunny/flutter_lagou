@@ -1,15 +1,15 @@
 class CompanyModel {
-  String company_id;
-  String company_name;
-  String company_logo;
-  String company_evaluation;
-  String city;
-  String scale;
-  String industry;
-  String funds_stage;
+  late String company_id;
+  late String company_name;
+  late String company_logo;
+  late String company_evaluation;
+  late String city;
+  late String scale;
+  late String industry;
+  late String funds_stage;
   int postion_num = 0;
   double company_score = 0.0;
-  List<String> company_tags;
+  late List<String> company_tags;
 
   CompanyModel.fromJson(Map data) {
     company_id = data["companyId"];

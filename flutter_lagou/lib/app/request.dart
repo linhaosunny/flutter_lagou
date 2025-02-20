@@ -15,7 +15,7 @@ class Request {
   static const RequestType sourceType = RequestType.local;
   
 
-  static Future<dynamic> get({String action,Map params}) async {
+  static Future<dynamic> get({required String action,Map? params}) async {
     if (sourceType == RequestType.local) {
       return Request.mock(action: action,params: params);
     } else {
@@ -23,7 +23,7 @@ class Request {
     }
   }
 
-  static Future<dynamic> post({String action,Map params}) async {
+  static Future<dynamic> post({required String action,Map? params}) async {
     if (sourceType == RequestType.local) {
       return Request.mock(action: action,params: params);
     } else {
@@ -32,37 +32,37 @@ class Request {
     
   }
 
-  static Future<dynamic> mock({String action,Map params}) async {
+  static Future<dynamic> mock({required String action,Map? params}) async {
     var responseStr = await rootBundle.loadString('mock/$action.json');
     var responseJson = json.decode(responseStr);
 
     return responseJson['data'];
   }
 
-  static Future<dynamic> networkGet({String action,Map params}) async {
+  static Future<dynamic> networkGet({required String action,Map? params}) async {
     var dio = Request.initDio();
     Response<Map> response = await dio.get(action, data: params);
-    var data = response.data['data'];
+    var data = response.data?['data'];
     print(data);
 
     return data;
   }
 
-  static Future<dynamic> networkPost({String action,Map params}) async {
+  static Future<dynamic> networkPost({required String action,Map? params}) async {
     var dio = Request.initDio();
     Response<Map> response = await dio.post(action, data: params);
-    var data = response.data['data'];
+    var data = response.data?['data'];
     print(data);
 
     return data;
   }
 
   static Dio initDio() {
-    var option = Options(
+    var option = BaseOptions(
       baseUrl: baseUrl,
-      connectTimeout: 10000,
-      receiveTimeout: 100000,
-      contentType: ContentType.json,
+      connectTimeout: Duration(milliseconds:10000),
+      receiveTimeout: Duration(milliseconds:100000),
+      contentType: Headers.jsonContentType,
     );
 
     return Dio(option);

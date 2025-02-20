@@ -6,12 +6,12 @@ enum BillboardType {
 }
 
 class CompanyBillboardModel {
-  String title;
-  String subTitle;
-  String contentType;
-  BillboardType type;
-  List<CompanyModel> companyModels;
-  List companys;
+  late String title;
+  late String subTitle;
+  late String contentType;
+  late BillboardType type;
+  late List<CompanyModel> companyModels;
+  late List companys;
 
   CompanyBillboardModel.fromJson(Map data) {
     title = data["title"];

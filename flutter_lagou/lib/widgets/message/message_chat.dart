@@ -5,7 +5,7 @@ import 'package:flutter_lagou/public.dart';
 class MessageChat extends StatefulWidget {
   final Color themeColor;
 
-  MessageChat({Key key,this.themeColor}):super(key:key);
+  MessageChat({Key? key,required this.themeColor}):super(key:key);
   @override
   _MessageChatState createState() => _MessageChatState();
 }

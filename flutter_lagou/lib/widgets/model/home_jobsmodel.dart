@@ -1,13 +1,13 @@
 class HomeJobsModel {
-  String job_id;
-  String job_name;
-  String payments;
-  String requirements;
-  String published_date;
-  String company_logo;
-  String company_name;
-  String company_profile;
-  List<String> job_label;
+  late String job_id;
+  late String job_name;
+  late String payments;
+  late String requirements;
+  late String published_date;
+  late String company_logo;
+  late String company_name;
+  late String company_profile;
+  late List<String> job_label;
 
   HomeJobsModel.fromJson(Map data) {
     job_id = data["job_id"];

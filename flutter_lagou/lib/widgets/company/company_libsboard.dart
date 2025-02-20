@@ -6,7 +6,7 @@ import 'package:flutter_lagou/public.dart';
 class CompanyLibsboard extends StatefulWidget {
   final ValueChanged<bool> isShowBottomTabbar;
 
-  CompanyLibsboard({Key key,this.isShowBottomTabbar}):super(key:key);
+  CompanyLibsboard({Key? key,required this.isShowBottomTabbar}):super(key:key);
 
   @override
   _CompanyLibsboardState createState() => _CompanyLibsboardState();
@@ -16,9 +16,9 @@ class _CompanyLibsboardState extends State<CompanyLibsboard> {
   @override
   List<CompanyModel> companyModels = [];
   TabbarPopType popType =TabbarPopType.popSelectNone;
-  Function tabbarReset;
-  String cityName;
-  String sortName;
+  late Function tabbarReset;
+  late String cityName;
+  late String sortName;
   
   Future<void> fetchData() async {
     try {

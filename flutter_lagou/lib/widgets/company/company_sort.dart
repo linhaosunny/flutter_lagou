@@ -8,7 +8,7 @@ class CompanySort extends StatefulWidget {
   Function(int,String) onSortItemClick;
   Function onTapBack;
 
-  CompanySort({Key key,this.height,this.themeColor,this.sortSelectName, this.onTapBack,this.onSortItemClick}) : super(key:key);
+  CompanySort({Key? key,required this.height,required this.themeColor,required this.sortSelectName,required this.onTapBack,required this.onSortItemClick}) : super(key:key);
   
   @override
   _CompanySortState createState() => _CompanySortState();

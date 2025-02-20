@@ -1,12 +1,12 @@
 import 'package:flutter_lagou/widgets/message/models/matchjob_model.dart';
 
 class SeeHRModel {
-  String hrName;
-  String hrImage;
-  String hrJob;
-  String companyName;
-  int timestamp;
-  MatchJobModel matchJob;
+  late String hrName;
+  late String hrImage;
+  late String hrJob;
+  late String companyName;
+  late int timestamp;
+  late MatchJobModel matchJob;
 
   SeeHRModel.fromJson(Map data) {
     hrName = data["name"];

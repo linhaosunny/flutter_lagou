@@ -70,8 +70,8 @@ class _MessagePageState extends State<MessagePage> with SingleTickerProviderStat
           backgroundColor: Colors.white,
           title: new TabBar(
             tabs: <Tab>[
-              _buildTabItem(0),
-              _buildTabItem(1)
+              Tab(child:_buildTabItem(0)),
+              Tab(child:_buildTabItem(1))
             ],
             isScrollable: true,
             indicator: customIndicator(new Color.fromARGB(255, 15, 185, 125), 

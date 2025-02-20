@@ -6,7 +6,7 @@ class CompanyItem extends StatelessWidget {
   final CompanyModel company;
   final double height;
 
-  CompanyItem({Key key,this.company,this.height = 130}):super(key:key);
+  CompanyItem({Key? key,required this.company,this.height = 130}):super(key:key);
 
   Widget _buildStar() {
     return new Container(

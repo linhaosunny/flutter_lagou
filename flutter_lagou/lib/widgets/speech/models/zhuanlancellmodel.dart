@@ -1,9 +1,9 @@
 class ZhunlanCellModel {
-  String id;
-  String keyword;
-  String title;
-  String linkUrl;
-  String image;
+  late String id;
+  late String keyword;
+  late String title;
+  late String linkUrl;
+  late String image;
 
   ZhunlanCellModel.fromJson(Map data) {
     id = data["id"];

@@ -5,7 +5,7 @@ import 'package:flutter_lagou/public.dart';
 class MessageSee extends StatefulWidget {
   final Color themeColor;
 
-  MessageSee({Key key,this.themeColor}):super(key:key);
+  MessageSee({Key? key,required this.themeColor}):super(key:key);
   @override
   _MessageSeeState createState() => _MessageSeeState();
 }

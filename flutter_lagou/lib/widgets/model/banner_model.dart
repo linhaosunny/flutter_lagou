@@ -1,7 +1,7 @@
 
 class BannerModel {
-  String imageUrl;
-  String link;
+  late String imageUrl;
+  late String link;
 
   BannerModel.fromJson(Map data) {
     imageUrl = data['image_url'];

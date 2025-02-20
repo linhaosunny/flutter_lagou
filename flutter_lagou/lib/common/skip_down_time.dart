@@ -6,18 +6,18 @@ import 'dart:math' as math;
 class _DrawProgress extends CustomPainter {
   final Color color;
   final double radius;
-  double angle;
-  AnimationController animation;
+  double angle = 0.0;
+  AnimationController? animation;
 
-  Paint circleFillPaint;
-  Paint progressPaint;
-  Rect rect;
+  late Paint circleFillPaint;
+  late Paint progressPaint;
+  late Rect rect;
 
   _DrawProgress(
     this.color,
     this.radius,
     {
-      double this.angle, AnimationController this.animation
+      double this.angle = 0.0, this.animation
     }) {
       circleFillPaint = new Paint();
       circleFillPaint.color = Colors.white;
@@ -29,8 +29,8 @@ class _DrawProgress extends CustomPainter {
       progressPaint.strokeCap = StrokeCap.round;
       progressPaint.strokeWidth = 3.0;
 
-      if (animation != null && !animation.isAnimating) {
-        animation.forward();
+      if (animation != null && !animation!.isAnimating) {
+        animation!.forward();
       }
 
     }
@@ -76,9 +76,9 @@ class SkipdownTime extends StatefulWidget {
     this.duration,
     this.size,
     {
-      Key key,
+      Key? key,
       String this.skipText = '跳过',
-      OnSkipClickLister this.clickLister,
+      required OnSkipClickLister this.clickLister,
       this.isHidden = false,
     }) : super(key: key);
 
@@ -87,7 +87,7 @@ class SkipdownTime extends StatefulWidget {
 }
 
 class __SkipdownTimeState extends State<SkipdownTime> with TickerProviderStateMixin {
-  AnimationController animationController;
+  late AnimationController animationController;
   double curAngle = 360.0;
 
   void _onSkipClick() {

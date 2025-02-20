@@ -7,12 +7,12 @@ enum HomeModelIndex {
 }
 
 class HomeModel {
-  String m_s_name;
-  List content;
-  List<BannerModel> bannerModels;
-  List<NewsBannerModel> newsModels;
-  List<TopicTabModel> topicTabMenus;
-  List<TopicBottomModel> topicBottomModels;
+  late String m_s_name;
+  late List content;
+  late List<BannerModel> bannerModels;
+  late List<NewsBannerModel> newsModels;
+  late List<TopicTabModel> topicTabMenus;
+  late List<TopicBottomModel> topicBottomModels;
 
   HomeModel.fromJson(Map data) {
     m_s_name = data['m_s_name'];

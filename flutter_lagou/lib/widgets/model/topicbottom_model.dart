@@ -1,11 +1,11 @@
 class TopicBottomModel {
-  String left_picture;
-  String left_link;
+  late String left_picture;
+  late String left_link;
 
-  String righttop_picture;
-  String righttop_link;
-  String rightbottom_picture;
-  String rightbottom_link;
+  late String righttop_picture;
+  late String righttop_link;
+  late String rightbottom_picture;
+  late String rightbottom_link;
 
   TopicBottomModel.fromJson(Map data) {
     left_picture = data["left_pic"];

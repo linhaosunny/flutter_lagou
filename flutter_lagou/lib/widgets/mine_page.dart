@@ -100,10 +100,18 @@ class _MinePageState extends State<MinePage> {
                     child: new Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-                        new TabmenuItem('images/mine/setting_logo_resume_33x33_@3x.png', '附件简历'),
-                        new TabmenuItem('images/mine/setting_logo_deliver_33x33_@3x.png', '我的投递'),
-                        new TabmenuItem('images/mine/setting_logo_attention_33x33_@3x.png', '关注公司'),
-                        new TabmenuItem('images/mine/setting_logo_collect_31x31_@3x.png', '职位收藏')
+                        new TabmenuItem('images/mine/setting_logo_resume_33x33_@3x.png', '附件简历', onPressed: () {
+                          
+                        },),
+                        new TabmenuItem('images/mine/setting_logo_deliver_33x33_@3x.png', '我的投递', onPressed: () {
+                          
+                        },),
+                        new TabmenuItem('images/mine/setting_logo_attention_33x33_@3x.png', '关注公司', onPressed: () {
+                          
+                        },),
+                        new TabmenuItem('images/mine/setting_logo_collect_31x31_@3x.png', '职位收藏', onPressed: () {
+                          
+                        },)
                       ],
                     ),
                   ),
@@ -116,13 +124,27 @@ class _MinePageState extends State<MinePage> {
                   color: Colors.white,
                   child: Column(
                     children: <Widget>[
-                      new ListMenuItem('images/mine/setting_logo_intention_22x22_@3x.png', '求职意向','','随便看看',false),
-                      new ListMenuItem('images/mine/setting_logo_privacy_22x22_@3x.png', '隐私设置','','',false),
-                      new ListMenuItem('images/mine/setting_logo_hunter_23x23_@3x.png', '拉勾猎头','images/mine/icon_setting_hunter_new_32x15_@3x.png','升职加薪好帮手',true),
-                      new ListMenuItem('images/mine/setting_logo_Wallet_21x21_@3x.png', '我的钱包','','',false),
-                      new ListMenuItem('images/mine/setting_logo_notifica_22x22_@3x.png', '通知','','',false),
-                      new ListMenuItem('images/mine/setting_logo_setting_22x22_@3x.png', '设置','','',false),
-                      new ListMenuItem('images/mine/setting_logo_suggest_22x22_@3x.png', '帮助与反馈','','',false),
+                      new ListMenuItem('images/mine/setting_logo_intention_22x22_@3x.png', '求职意向','','随便看看',false, onPressed: () {
+                          
+                        },),
+                      new ListMenuItem('images/mine/setting_logo_privacy_22x22_@3x.png', '隐私设置','','',false, onPressed: () {
+                          
+                        },),
+                      new ListMenuItem('images/mine/setting_logo_hunter_23x23_@3x.png', '拉勾猎头','images/mine/icon_setting_hunter_new_32x15_@3x.png','升职加薪好帮手',true, onPressed: () {
+                          
+                        },),
+                      new ListMenuItem('images/mine/setting_logo_Wallet_21x21_@3x.png', '我的钱包','','',false, onPressed: () {
+                          
+                        },),
+                      new ListMenuItem('images/mine/setting_logo_notifica_22x22_@3x.png', '通知','','',false, onPressed: () {
+                          
+                        },),
+                      new ListMenuItem('images/mine/setting_logo_setting_22x22_@3x.png', '设置','','',false, onPressed: () {
+                          
+                        },),
+                      new ListMenuItem('images/mine/setting_logo_suggest_22x22_@3x.png', '帮助与反馈','','',false, onPressed: () {
+                          
+                        },),
                     ],
                   ),
                 )

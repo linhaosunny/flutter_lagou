@@ -1,6 +1,6 @@
 class BaseModel {
-  String module_name;
-  List content;
+  late String module_name;
+  late List content;
 
   BaseModel.fromJson(Map data,String modelName,void callback(Map data)) {
     module_name = data['module_name'];

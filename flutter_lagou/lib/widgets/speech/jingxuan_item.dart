@@ -4,7 +4,7 @@ import 'package:flutter_lagou/widgets/speech/speech_public.dart';
 class JingxuanItem extends StatelessWidget {
   final JingXuanCellModel model;
 
-  JingxuanItem({Key key,this.model}) : super(key : key);
+  JingxuanItem({Key? key,required this.model}) : super(key : key);
 
   @override
   Widget build(BuildContext context) {

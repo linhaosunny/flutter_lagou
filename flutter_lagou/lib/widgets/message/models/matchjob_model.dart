@@ -1,11 +1,11 @@
 class MatchJobModel {
-  int jobId;
-  String jobName;
-  String jobSalary;
-  String jobCity;
-  String jobWorkYear;
-  String jobEducation;
-  String jobDescribtion;
+  late int jobId;
+  late String jobName;
+  late String jobSalary;
+  late String jobCity;
+  late String jobWorkYear;
+  late String jobEducation;
+  late String jobDescribtion;
 
   MatchJobModel.fromJson(Map data) {
     jobId = data["positionId"];

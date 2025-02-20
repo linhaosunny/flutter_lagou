@@ -9,7 +9,7 @@ import 'package:flutter_lagou/widgets/message_page.dart';
 
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key,required this.title}) : super(key: key);
 
   final String title;
 
@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   
   // 匹配tabbar颜色
-  Color _tabbarColorMatching({TabbarType type}) {
+  Color _tabbarColorMatching({TabbarType? type}) {
     return _lastSelection == type ? Color.fromARGB(255, 15, 185, 125) : Colors.grey;
   }
 
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   
   // 创建TabbarItem
-  BottomNavigationBarItem _buildBottomBarItem({String icon,TabbarType tabbarSelection}) {
+  BottomNavigationBarItem _buildBottomBarItem({required String icon,required TabbarType tabbarSelection}) {
     String text = tabbarName(tabbarSelection);
 
     return new BottomNavigationBarItem(
@@ -78,10 +78,11 @@ class _MyHomePageState extends State<MyHomePage> {
         width: 25.0,
         height: 25.0,
       ),
-      title: new Text(
-        text,
-        style: TextStyle(color: _tabbarColorMatching())
-      )
+      label: text,
+      // title: new Text(
+      //   text,
+      //   style: TextStyle(color: _tabbarColorMatching())
+      // )
     );
   }
   

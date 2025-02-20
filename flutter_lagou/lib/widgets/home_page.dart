@@ -209,7 +209,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               ),
               titleSpacing: _mainScrollable ? 7.0 : 0.0,
               centerTitle: true,
-              title: _isNavgationBarHidden ? null: SearchBar('images/home/icon_home_search_20x20_@3x.png',height: 32,
+              title: _isNavgationBarHidden ? null: FSearchBar('images/home/icon_home_search_20x20_@3x.png',height: 32,
                 backgroudColor: Color.lerp(Colors.white, Colors.black12, _navAplpha),
               ),
               actions: _isNavgationBarHidden ? null: <Widget>[
@@ -274,7 +274,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 }
 
 class Choice {
-  const Choice({ this.title, this.icon, this.position});
+  const Choice({required this.title,required this.icon,required this.position});
   final String title;
   final int position;
   final IconData icon;

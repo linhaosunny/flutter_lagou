@@ -1,11 +1,11 @@
 class PostJobModel {
-  int jobId;
-  String jobName;
-  String jobSalary;
-  String jobCity;
-  String jobWorkYear;
-  String jobEducation;
-  String jobCompany;
+  late int jobId;
+  late String jobName;
+  late String jobSalary;
+  late String jobCity;
+  late String jobWorkYear;
+  late String jobEducation;
+  late String jobCompany;
 
   PostJobModel.fromJson(Map data) {
     jobId = data["positionId"];

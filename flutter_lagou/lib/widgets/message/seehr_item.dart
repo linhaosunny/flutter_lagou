@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lagou/widgets/message/message_public.dart';
 import 'package:flutter_lagou/public.dart';
 import 'package:common_utils/common_utils.dart';
+import 'package:intl/intl.dart';
 
 class SeeHRItem extends StatefulWidget {
   final SeeHRModel model;
 
-  SeeHRItem({Key key,this.model}):super(key:key);
+  SeeHRItem({Key? key,required this.model}):super(key:key);
   @override
   _SeeHRItemState createState() => _SeeHRItemState();
 }
@@ -61,7 +62,8 @@ class _SeeHRItemState extends State<SeeHRItem> {
                 ),
                 new Container(
                   margin: EdgeInsets.only(top: 20.0,left: 20.0),
-                  child: new Text(DateUtil.getDateStrByDateTime(DateTime.fromMillisecondsSinceEpoch(widget.model.timestamp),format: DateFormat.ZH_MONTH_DAY) + " 查看了您",style: new TextStyle(fontSize: 12.0,color: Colors.black38)),
+                  child: new Text(DateFormat('yyyy年MM月dd日').format(DateTime.fromMillisecondsSinceEpoch(widget.model.timestamp)) + " 查看了您",
+  style: new TextStyle(fontSize: 12.0, color: Colors.black38),),
                 )
               ],
             ),

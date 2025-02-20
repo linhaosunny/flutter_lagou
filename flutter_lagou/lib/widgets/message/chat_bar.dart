@@ -9,7 +9,7 @@ class ChatBar extends StatefulWidget {
   final ValueChanged<Function> onVisibleFocusechanged;
   final ValueChanged<String> onCompletedTextInput;
 
-  ChatBar({Key key,this.themeColor,this.onChatBarItemClick,this.onCompletedTextInput,this.onVisibleFocusechanged,this.onTextFieldMuiltLineHeightChanged}):super(key:key);
+  ChatBar({Key? key,required this.themeColor,required this.onChatBarItemClick,required this.onCompletedTextInput,required this.onVisibleFocusechanged,required this.onTextFieldMuiltLineHeightChanged}):super(key:key);
   @override
   _ChatBarState createState() => _ChatBarState();
 }

@@ -4,12 +4,14 @@ class TabtitleButton extends StatelessWidget {
   final String icon;
   final String title;
   final String buttonTitle;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
-  TabtitleButton(this.icon,this.title,this.buttonTitle,{Key key,this.onPressed}) : super(key: key);
+  TabtitleButton(this.icon,this.title,this.buttonTitle,{Key? key,this.onPressed}) : super(key: key);
 
   void _onPressed() {
-    onPressed();
+    if (onPressed != null) {
+      onPressed!(); // 确保 onPressed 不为 null 后调用
+    }
   }
 
   @override
@@ -36,18 +38,18 @@ class TabtitleButton extends StatelessWidget {
               margin: const EdgeInsets.only(left: 15.0),
               height: 20,
               width: 60,
-              child: FlatButton(
+              child: TextButton(
                 onPressed: _onPressed,
                 child: new Text(buttonTitle,style: new TextStyle(color: Colors.white, fontSize: 10.0)),
-                color: Color.fromARGB(255, 15, 185, 125),
-                shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-                side: BorderSide(
-                    color: Color.fromARGB(255, 15, 185, 125), 
-                    style: BorderStyle.solid, 
-                    width: 1)),
-                clipBehavior: Clip.antiAlias,
-              ),
+                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 15, 185, 125)), shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                  side: BorderSide(
+                    color: Color.fromARGB(255, 15, 185, 125),
+                    style: BorderStyle.solid,
+                    width: 1,
+                  ),
+                ))),
+              )
             )
         ],
       ),

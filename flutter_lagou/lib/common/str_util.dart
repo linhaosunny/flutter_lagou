@@ -3,12 +3,12 @@ class StringUtil {
     List<String> result = [];
     RegExp exp = new RegExp(r"<(img|IMG)(.*?)(/>|></img>|>)");
     for (var item in exp.allMatches(srcImageStr)) {
-      String str_img = item.group(2);
-      RegExp p_src = new RegExp(r"""(src|SRC)=(\"|\')(.*?)(\"|\')""");
+      String? str_img = item.group(2); // 修改为 String?
       if (str_img != null && str_img.isNotEmpty) {
+        RegExp p_src = new RegExp(r"""(src|SRC)=(\"|\')(.*?)(\"|\')""");
         var match = p_src.firstMatch(str_img);
         if (match != null) {
-          result.add(match.group(3));
+          result.add(match.group(3)!); // 断言 group(3) 不为 null
         }
       }
     }
@@ -16,9 +16,9 @@ class StringUtil {
   }
 
   static String getSrcImagePath(String srcImageStr) {
-    List list = matchImageSrc(srcImageStr);
-    String path = list?.first;
+    List<String> list = matchImageSrc(srcImageStr);
+    String? path = list.isNotEmpty ? list.first : null; // 处理空列表的情况
 
-    return path;
+    return path ?? ''; // 如果 path 为 null，则返回空字符串
   }
 }

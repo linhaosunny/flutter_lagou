@@ -42,31 +42,34 @@ class CustomUnderlineTabIndicator extends Decoration {
   final double width;
 
   @override
-  Decoration lerpFrom(Decoration a, double t) {
+  Decoration? lerpFrom(Decoration? a, double t) {
     if (a is CustomUnderlineTabIndicator) {
       return CustomUnderlineTabIndicator(
         borderSide: BorderSide.lerp(a.borderSide, borderSide, t),
-        insets: EdgeInsetsGeometry.lerp(a.insets, insets, t),
+        insets: EdgeInsetsGeometry.lerp(a.insets, insets, t) ?? EdgeInsets.zero,
       );
     }
     return super.lerpFrom(a, t);
   }
 
   @override
-  Decoration lerpTo(Decoration b, double t) {
+  Decoration? lerpTo(Decoration? b, double t) {
     if (b is CustomUnderlineTabIndicator) {
       return CustomUnderlineTabIndicator(
         borderSide: BorderSide.lerp(borderSide, b.borderSide, t),
-        insets: EdgeInsetsGeometry.lerp(insets, b.insets, t),
+        insets: EdgeInsetsGeometry.lerp(insets, b.insets, t) ?? EdgeInsets.zero,
       );
     }
     return super.lerpTo(b, t);
   }
 
   @override
-  _UnderlinePainter createBoxPainter([VoidCallback onChanged]) {
+  _UnderlinePainter createBoxPainter([VoidCallback onChanged = _emptyCallback]) {
     return _UnderlinePainter(this,width, onChanged);
   }
+
+  // 定义一个空函数作为默认值
+  static void _emptyCallback() {}
 }
 
 class _UnderlinePainter extends BoxPainter {
@@ -106,8 +109,8 @@ class _UnderlinePainter extends BoxPainter {
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
     assert(configuration != null);
     assert(configuration.size != null);
-    final Rect rect = offset & configuration.size;
-    final TextDirection textDirection = configuration.textDirection;
+    final Rect rect = offset & (configuration.size ?? Size.zero);
+    final TextDirection textDirection = configuration.textDirection ?? TextDirection.ltr;
     final Rect indicator = _indicatorRectFor(rect, textDirection).deflate(borderSide.width / 2.0);
     final Paint paint = borderSide.toPaint()..strokeCap = StrokeCap.square;
     canvas.drawLine(indicator.bottomLeft, indicator.bottomRight, paint);

@@ -16,7 +16,7 @@ class CompanyTabbar extends StatefulWidget {
   final ValueChanged<TabbarPopType> popTypeChanged;
   Function(Function) tabbarReset;
 
-  CompanyTabbar({Key key,this.cityName,this.sortName,this.tabbarReset,this.isShowBottomTabbar,this.popTypeChanged}):super(key:key);
+  CompanyTabbar({Key? key,required this.cityName,required this.sortName,required this.tabbarReset,required this.isShowBottomTabbar,required this.popTypeChanged}):super(key:key);
   @override
   _CompanyTabbarState createState() => _CompanyTabbarState();
 }
@@ -25,7 +25,7 @@ class _CompanyTabbarState extends State<CompanyTabbar> {
   bool isTapCity = false;
   bool isTapSelect = false;
   bool isTapSort = false;
-  TabbarPopType popType;
+  late TabbarPopType popType;
 
   @override
   Widget build(BuildContext context) {

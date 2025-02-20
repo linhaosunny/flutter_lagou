@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 
-class SearchBar extends StatefulWidget {
+class FSearchBar extends StatefulWidget {
   final String leftIcon;
-  Color  backgroudColor;
+  Color?  backgroudColor;
   double height;
 
-  SearchBar(this.leftIcon,{Key key,this.backgroudColor,this.height}): super(key: key);
+  FSearchBar(this.leftIcon,{Key? key, this.backgroudColor,required this.height}): super(key: key);
   @override
   _SearchBarState createState() => _SearchBarState();
 }
 
-class _SearchBarState extends State<SearchBar> {
+class _SearchBarState extends State<FSearchBar> {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -7,7 +7,7 @@ import 'package:flutter_lagou/page_routes.dart';
 class NewFeaturesPage extends StatefulWidget {
    final Color themeColor;
 
-   NewFeaturesPage({Key key,this.themeColor}):super(key:key);
+   NewFeaturesPage({Key? key,required this.themeColor}):super(key:key);
   @override
   _NewFeaturesPageState createState() => _NewFeaturesPageState();
 }

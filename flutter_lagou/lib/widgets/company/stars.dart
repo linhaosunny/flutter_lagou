@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Stars extends StatefulWidget {
   final double score;
   final double size;
-  Stars({Key key,this.score = 3.0,this.size = 16}):super(key:key);
+  Stars({Key? key,this.score = 3.0,this.size = 16}):super(key:key);
 
   @override
   _StarsState createState() => _StarsState();

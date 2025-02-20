@@ -16,16 +16,16 @@ enum ChatMessageUserType {
 }
 
 class MsgContentModel {
-  ChatMessageType type;
-  ChatMessageUserType from;
-  String headImage;
-  String textContent;
-  String date;
-  String postMessage;
-  PostJobModel postJob;
-  File pictureFile;
+  late ChatMessageType type;
+  late ChatMessageUserType from;
+  late String headImage;
+  late String textContent;
+  late String date;
+  String? postMessage;
+  PostJobModel? postJob;
+  late File pictureFile;
 
-  MsgContentModel({this.type,this.postMessage,this.postJob}):super();
+  MsgContentModel({required this.type,this.postMessage,this.postJob}):super();
 
   MsgContentModel.fromJson(Map data) {
     headImage = data["headImg"];

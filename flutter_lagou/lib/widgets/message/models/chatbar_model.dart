@@ -10,5 +10,5 @@ class ChatBarModel {
   ChatBarItemType type;
   String icon;
 
-  ChatBarModel({this.icon,this.type}):super();
+  ChatBarModel({required this.icon,required this.type}):super();
 }

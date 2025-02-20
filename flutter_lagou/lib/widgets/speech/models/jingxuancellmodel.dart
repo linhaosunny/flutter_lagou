@@ -1,8 +1,8 @@
 class JingXuanCellModel {
-    String id;
-    String fromTopic;
-    String title;
-    String linkUrl;
+    late String id;
+    late String fromTopic;
+    late String title;
+    late String linkUrl;
     int follow = 0;
     int comment = 19;
 

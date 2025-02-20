@@ -6,7 +6,7 @@ class KaiwuBanner extends StatelessWidget {
   final List<BannerModel> bannerModels;
   final double height;
   final String placeholder;
-  KaiwuBanner({Key key,this.bannerModels,this.height,this.placeholder}) :super(key:key);
+  KaiwuBanner({Key? key,required this.bannerModels,required this.height,required this.placeholder}) :super(key:key);
 
   @override
   Widget build(BuildContext context) {

@@ -6,8 +6,8 @@ enum IndicatorType {
 }
 
 class Indicator extends StatelessWidget {
-  final Widget indicatorNormal;
-  final Widget indicatorSelected;
+  final Widget? indicatorNormal;
+  final Widget? indicatorSelected;
   final double indicatorMargin;
   final bool show;
   final bool showBackgroud;
@@ -16,7 +16,7 @@ class Indicator extends StatelessWidget {
   final double paddingBottom;
   final IndicatorType type;
 
-  Indicator({Key key,this.size,this.currentIndex,this.show = true,this.showBackgroud =false, this.indicatorNormal,this.indicatorSelected,this.indicatorMargin = 5.0,this.paddingBottom = 10, this.type =IndicatorType.circle}): super(key:key);
+  Indicator({Key? key,required this.size,required this.currentIndex,this.show = true,this.showBackgroud = false,this.indicatorNormal,this.indicatorSelected,this.indicatorMargin = 5.0,this.paddingBottom = 10, this.type = IndicatorType.circle}): super(key:key);
   
 
   Widget _buildCircleIndicatorDot({bool selected = false,double indicatorDotSize = 6.0}) {

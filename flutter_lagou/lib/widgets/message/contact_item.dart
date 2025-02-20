@@ -7,7 +7,7 @@ class ContactItem extends StatefulWidget {
   final Color themeColor;
   final ChatModel model;
 
-  ContactItem({Key key,this.model,this.height = 80,this.themeColor}):super(key:key);
+  ContactItem({Key? key,required this.model,this.height = 80,required this.themeColor}):super(key:key);
   @override
   _ContactItemState createState() => _ContactItemState();
 }

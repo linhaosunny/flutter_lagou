@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Headlist extends StatefulWidget {
   final List<String> items;
   final double height; 
-  Headlist({Key key,this.items,this.height = 20}) :super(key:key);
+  Headlist({Key? key,required this.items,this.height = 20}) :super(key:key);
   @override
   _HeadlistState createState() => _HeadlistState();
 }

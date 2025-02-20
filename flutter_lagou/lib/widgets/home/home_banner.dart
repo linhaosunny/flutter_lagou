@@ -6,7 +6,7 @@ class HomeBanner extends StatelessWidget {
   final List<BannerModel> bannerModels;
   final double height;
   final String placeholder;
-  HomeBanner({Key key,this.bannerModels,this.height,this.placeholder}) :super(key:key);
+  HomeBanner({Key? key,required this.bannerModels,required this.height,required this.placeholder}) :super(key:key);
 
   @override
   Widget build(BuildContext context) {

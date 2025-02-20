@@ -9,7 +9,7 @@ import 'package:flutter_lagou/public.dart';
 class HRChat extends StatefulWidget {
   final Color themeColor;
 
-  HRChat({Key key,this.themeColor}):super(key:key);
+  HRChat({Key? key,required this.themeColor}):super(key:key);
   @override
   _HRChatState createState() => _HRChatState();
 }
@@ -21,7 +21,7 @@ class _HRChatState extends State<HRChat> {
   final double _tipMessageBarHeight = kTextTabBarHeight;
   double _chatListHeight = 0.0;
   double chatListMaxHeight = 0.0;
-  Function updateChatbar;
+  late Function updateChatbar;
   final _chatListKey = GlobalKey();
 
   void rightNavgationBarClick() {
@@ -130,13 +130,20 @@ class _HRChatState extends State<HRChat> {
   }
 
   void _scrollListViewToBottom() {
-    final listViewHeight = _chatListKey.currentContext.size.height;
-    print('height');
-    controll.animateTo(listViewHeight,duration: new Duration(milliseconds: 300),curve: Curves.easeOut);
+    final listViewHeight = _chatListKey.currentContext?.size?.height;
+    if (listViewHeight != null) {
+      print('height');
+      controll.animateTo(listViewHeight,duration: new Duration(milliseconds: 300),curve: Curves.easeOut);
+    }
   }
 
   void _openImageSelector(ImageSource type) async {
-    File imageFile = await ImagePicker.pickImage(source: type);
+    final XFile? imageXFile = await ImagePicker().pickImage(source: type);
+    if (imageXFile == null) {
+      return;
+    }
+
+    File imageFile = File(imageXFile.path);
 
     MsgContentModel model = MsgContentModel(
                     type: ChatMessageType.pictureMessage,

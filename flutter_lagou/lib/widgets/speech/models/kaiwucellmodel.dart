@@ -1,9 +1,9 @@
 import 'package:flutter_lagou/widgets/speech/speech_public.dart';
 
 class KaiWuCellModel {
-  String title;
-  String tag;
-  KaiWuCourseModel course_model;
+  late String title;
+  late String tag;
+  late KaiWuCourseModel course_model;
   int product_id = 0;
   bool purchased = false;
 

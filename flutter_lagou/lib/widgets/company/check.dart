@@ -5,7 +5,7 @@ class CustomCheck extends StatefulWidget {
   final String checkIcon;
   final double size;
   final Function(bool) onValueChanged;
-  CustomCheck({Key key,@required this.normalIcon,@required this.checkIcon,this.size = 16,this.onValueChanged}):super(key:key);
+  CustomCheck({Key? key,required this.normalIcon,required this.checkIcon,this.size = 16,required this.onValueChanged}):super(key:key);
 
   @override
   _CustomCheckState createState() => _CustomCheckState();

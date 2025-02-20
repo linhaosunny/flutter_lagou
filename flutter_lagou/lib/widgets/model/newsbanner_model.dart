@@ -1,9 +1,9 @@
 class NewsBannerModel {
-  String keywordTop;
-  String titleTop;
+  late String keywordTop;
+  late String titleTop;
 
-  String keywordBottom;
-  String titleBottom;
+  late String keywordBottom;
+  late String titleBottom;
 
   NewsBannerModel.fromJson(Map data0,Map data1) {
     keywordTop = data0['keyword'];

@@ -7,7 +7,7 @@ import 'dart:io';
 class MsgItem extends StatefulWidget {
   final MsgContentModel model;
 
-  MsgItem({Key key,this.model}) :super(key:key);
+  MsgItem({Key? key,required this.model}) :super(key:key);
 
   @override
   _MsgItemState createState() => _MsgItemState();
@@ -24,7 +24,7 @@ class _MsgItemState extends State<MsgItem> {
             borderRadius: BorderRadius.circular(3.0)
           ),
           child: new Center(
-            child: new Text(widget.model.postMessage,style: new TextStyle(fontSize: 14.0,color: Colors.black54)),
+            child: new Text(widget.model.postMessage ?? '',style: new TextStyle(fontSize: 14.0,color: Colors.black54)),
           ),
         );
   }
@@ -47,18 +47,18 @@ class _MsgItemState extends State<MsgItem> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    new Text(widget.model.postJob.jobName, style:new TextStyle(fontSize:16.0,color:Colors.black,fontWeight: FontWeight.w400),softWrap: false,overflow: TextOverflow.ellipsis,maxLines: 1,),
-                    new Text(widget.model.postJob.jobSalary, style: new TextStyle(fontSize:13.0,color:Colors.deepOrange,fontWeight: FontWeight.w400),)
+                    new Text(widget.model.postJob?.jobName ?? '', style:new TextStyle(fontSize:16.0,color:Colors.black,fontWeight: FontWeight.w400),softWrap: false,overflow: TextOverflow.ellipsis,maxLines: 1,),
+                    new Text(widget.model.postJob?.jobSalary ?? '', style: new TextStyle(fontSize:13.0,color:Colors.deepOrange,fontWeight: FontWeight.w400),)
                   ],
                 ),
               ),
               new Container(
                 margin: EdgeInsets.only(left: 15.0,top: 5.0,right: 15.0),
-                child: new Text(widget.model.postJob.jobCompany,style:new TextStyle(fontSize:15.0,color:Colors.black54),softWrap: false,overflow: TextOverflow.ellipsis,maxLines: 1,),
+                child: new Text(widget.model.postJob?.jobCompany ?? '',style:new TextStyle(fontSize:15.0,color:Colors.black54),softWrap: false,overflow: TextOverflow.ellipsis,maxLines: 1,),
               ),
               new Container(
                 margin: EdgeInsets.only(left: 15.0,top: 5.0,right: 15.0),
-                child: new Text(widget.model.postJob.jobCity + '/' + widget.model.postJob.jobWorkYear + '/' + widget.model.postJob.jobEducation,
+                child: new Text((widget.model.postJob?.jobCity ?? '') + '/' + (widget.model.postJob?.jobWorkYear ?? '') + '/' + (widget.model.postJob?.jobEducation ?? ''),
                   style: new TextStyle(fontSize:13.0,color:Colors.black38)
                 ),
               )
@@ -68,13 +68,13 @@ class _MsgItemState extends State<MsgItem> {
   }
 
   ImageProvider _headImageWithUrl( String url) {
-    bool isNetworkUrl = false;
+    bool isNetworkUrl = url.contains('http') || url.contains('https');
 
-    if (widget.model.headImage.contains('http') || widget.model.headImage.contains('https')) {
-      isNetworkUrl = true;
+    if (isNetworkUrl) {
+      return NetworkImage(url);
+    } else {
+      return AssetImage(url);
     }
-
-    return isNetworkUrl ? new NetworkImage(url ?? '') : AssetImage(url ?? '');
   }
 
   List<Widget> _buildCommonContent(ChatMessageUserType type, Widget content) {

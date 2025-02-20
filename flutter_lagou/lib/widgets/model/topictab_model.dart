@@ -1,6 +1,6 @@
 class TopicTabModel {
-  String picture;
-  String link;
+  late String picture;
+  late String link;
 
   TopicTabModel.fromJson(Map data) {
     picture = data['pic'];
